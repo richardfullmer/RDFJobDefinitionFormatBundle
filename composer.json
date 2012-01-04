@@ -1,0 +1,27 @@
+{
+    "name":"richardfullmer/job-definition-format-bundle",
+    "type":"symfony-bundle",
+    "description":"This Bundle provides various tools to read, write and modify JDF",
+    "keywords":["jdf"],
+    "homepage":"http://github.com/richardfullmer",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Richard Fullmer",
+            "email":"richardfullmer@gmail.com"
+        }
+    ],
+
+    "require":{
+        "php":                          ">=5.3.2",
+        "doctrine/doctrine-oxm-bundle": "master-dev"
+    },
+
+    "autoload":{
+        "psr-0":{
+            "RDF\\JobDefinitionFormatBundle":""
+        }
+    },
+
+    "target-dir":"RDF/JobDefinitionFormatBundle"
+}
