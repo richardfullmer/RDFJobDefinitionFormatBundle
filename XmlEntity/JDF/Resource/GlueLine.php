@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\GlueLine
  *
- * @XmlEntity(xml="GlueLine")
+ * @OXM\XmlEntity(xml="GlueLine")
  */
 class GlueLine
 {

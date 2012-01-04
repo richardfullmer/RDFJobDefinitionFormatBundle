@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\DigitalDeliveryParams
  *
- * @XmlEntity(xml="DigitalDeliveryParams")
+ * @OXM\XmlEntity(xml="DigitalDeliveryParams")
  */
 class DigitalDeliveryParams
 {

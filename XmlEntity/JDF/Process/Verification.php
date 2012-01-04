@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\Verification
  *
- * @XmlEntity(xml="Verification")
+ * @OXM\XmlEntity(xml="Verification")
  */
 class Verification
 {

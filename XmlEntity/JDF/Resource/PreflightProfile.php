@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PreflightProfile
  *
- * @XmlEntity(xml="PreflightProfile")
+ * @OXM\XmlEntity(xml="PreflightProfile")
  */
 class PreflightProfile
 {

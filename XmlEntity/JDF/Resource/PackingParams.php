@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PackingParams
  *
- * @XmlEntity(xml="PackingParams")
+ * @OXM\XmlEntity(xml="PackingParams")
  */
 class PackingParams
 {

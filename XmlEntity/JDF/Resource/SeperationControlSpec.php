@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\SeperationControlSpec
  *
- * @XmlEntity(xml="SeperationControlSpec")
+ * @OXM\XmlEntity(xml="SeperationControlSpec")
  */
 class SeperationControlSpec
 {

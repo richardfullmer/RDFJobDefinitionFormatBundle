@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ManualLaborParams
  *
- * @XmlEntity(xml="ManualLaborParams")
+ * @OXM\XmlEntity(xml="ManualLaborParams")
  */
 class ManualLaborParams
 {

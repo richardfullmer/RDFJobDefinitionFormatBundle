@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\ContoneCalibration
  *
- * @XmlEntity(xml="ContoneCalibration")
+ * @OXM\XmlEntity(xml="ContoneCalibration")
  */
 class ContoneCalibration
 {

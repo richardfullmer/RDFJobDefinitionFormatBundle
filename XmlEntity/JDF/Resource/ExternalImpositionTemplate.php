@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ExternalImpositionTemplate
  *
- * @XmlEntity(xml="ExternalImpositionTemplate")
+ * @OXM\XmlEntity(xml="ExternalImpositionTemplate")
  */
 class ExternalImpositionTemplate
 {

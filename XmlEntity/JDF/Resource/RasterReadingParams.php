@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\RasterReadingParams
  *
- * @XmlEntity(xml="RasterReadingParams")
+ * @OXM\XmlEntity(xml="RasterReadingParams")
  */
 class RasterReadingParams
 {

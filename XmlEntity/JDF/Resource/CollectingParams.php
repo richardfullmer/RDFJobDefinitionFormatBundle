@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\CollectingParams
  *
- * @XmlEntity(xml="CollectingParams")
+ * @OXM\XmlEntity(xml="CollectingParams")
  */
 class CollectingParams
 {

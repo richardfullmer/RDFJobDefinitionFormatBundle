@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ThreadSewingParams
  *
- * @XmlEntity(xml="ThreadSewingParams")
+ * @OXM\XmlEntity(xml="ThreadSewingParams")
  */
 class ThreadSewingParams
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\InkZoneProfile
  *
- * @XmlEntity(xml="InkZoneProfile")
+ * @OXM\XmlEntity(xml="InkZoneProfile")
  */
 class InkZoneProfile
 {

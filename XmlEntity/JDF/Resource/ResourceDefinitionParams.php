@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ResourceDefinitionParams
  *
- * @XmlEntity(xml="ResourceDefinitionParams")
+ * @OXM\XmlEntity(xml="ResourceDefinitionParams")
  */
 class ResourceDefinitionParams
 {

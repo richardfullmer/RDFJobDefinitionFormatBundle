@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\CaseMaking
  *
- * @XmlEntity(xml="CaseMaking")
+ * @OXM\XmlEntity(xml="CaseMaking")
  */
 class CaseMaking
 {

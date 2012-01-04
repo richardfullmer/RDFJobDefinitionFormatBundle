@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\FoldingIntent
  *
- * @XmlEntity(xml="FoldingIntent")
+ * @OXM\XmlEntity(xml="FoldingIntent")
  */
 class FoldingIntent
 {

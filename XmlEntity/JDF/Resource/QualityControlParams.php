@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\QualityControlParams
  *
- * @XmlEntity(xml="QualityControlParams")
+ * @OXM\XmlEntity(xml="QualityControlParams")
  */
 class QualityControlParams
 {

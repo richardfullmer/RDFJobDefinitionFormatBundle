@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\MediaSource
  *
- * @XmlEntity(xml="MediaSource")
+ * @OXM\XmlEntity(xml="MediaSource")
  */
 class MediaSource
 {

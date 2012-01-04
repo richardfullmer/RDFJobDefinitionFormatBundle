@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\RenderingParams
  *
- * @XmlEntity(xml="RenderingParams")
+ * @OXM\XmlEntity(xml="RenderingParams")
  */
 class RenderingParams
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\LayoutElementProduction
  *
- * @XmlEntity(xml="LayoutElementProduction")
+ * @OXM\XmlEntity(xml="LayoutElementProduction")
  */
 class LayoutElementProduction
 {

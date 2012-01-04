@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\LayoutElement
  *
- * @XmlEntity(xml="LayoutElement")
+ * @OXM\XmlEntity(xml="LayoutElement")
  */
 class LayoutElement
 {

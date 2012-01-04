@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\CoverApplication
  *
- * @XmlEntity(xml="CoverApplication")
+ * @OXM\XmlEntity(xml="CoverApplication")
  */
 class CoverApplication
 {

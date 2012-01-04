@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\FoldingParams
  *
- * @XmlEntity(xml="FoldingParams")
+ * @OXM\XmlEntity(xml="FoldingParams")
  */
 class FoldingParams
 {

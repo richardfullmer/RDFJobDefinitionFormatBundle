@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\InkZoneCalculation
  *
- * @XmlEntity(xml="InkZoneCalculation")
+ * @OXM\XmlEntity(xml="InkZoneCalculation")
  */
 class InkZoneCalculation
 {

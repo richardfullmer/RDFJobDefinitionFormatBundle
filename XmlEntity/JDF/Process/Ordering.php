@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\Ordering
  *
- * @XmlEntity(xml="Ordering")
+ * @OXM\XmlEntity(xml="Ordering")
  */
 class Ordering
 {

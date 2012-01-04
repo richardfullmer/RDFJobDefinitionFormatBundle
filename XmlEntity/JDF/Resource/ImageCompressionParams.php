@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ImageCompressionParams
  *
- * @XmlEntity(xml="ImageCompressionParams")
+ * @OXM\XmlEntity(xml="ImageCompressionParams")
  */
 class ImageCompressionParams
 {

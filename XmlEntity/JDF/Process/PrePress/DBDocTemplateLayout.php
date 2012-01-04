@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\DBDocTemplateLayout
  *
- * @XmlEntity(xml="DBDocTemplateLayout")
+ * @OXM\XmlEntity(xml="DBDocTemplateLayout")
  */
 class DBDocTemplateLayout
 {

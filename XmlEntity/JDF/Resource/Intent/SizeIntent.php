@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\SizeIntent
  *
- * @XmlEntity(xml="SizeIntent")
+ * @OXM\XmlEntity(xml="SizeIntent")
  */
 class SizeIntent
 {

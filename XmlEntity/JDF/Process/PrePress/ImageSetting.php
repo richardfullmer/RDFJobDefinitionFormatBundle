@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\ImageSetting
  *
- * @XmlEntity(xml="ImageSetting")
+ * @OXM\XmlEntity(xml="ImageSetting")
  */
 class ImageSetting
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\ColorIntent
  *
- * @XmlEntity(xml="ColorIntent")
+ * @OXM\XmlEntity(xml="ColorIntent")
  */
 class ColorIntent
 {

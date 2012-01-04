@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ProofingParams
  *
- * @XmlEntity(xml="ProofingParams")
+ * @OXM\XmlEntity(xml="ProofingParams")
  */
 class ProofingParams
 {

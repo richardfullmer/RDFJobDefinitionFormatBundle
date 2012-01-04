@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ColorSpaceConversionParams
  *
- * @XmlEntity(xml="ColorSpaceConversionParams")
+ * @OXM\XmlEntity(xml="ColorSpaceConversionParams")
  */
 class ColorSpaceConversionParams
 {

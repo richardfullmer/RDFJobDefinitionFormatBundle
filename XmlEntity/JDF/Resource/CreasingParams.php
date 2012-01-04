@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\CreasingParams
  *
- * @XmlEntity(xml="CreasingParams")
+ * @OXM\XmlEntity(xml="CreasingParams")
  */
 class CreasingParams
 {

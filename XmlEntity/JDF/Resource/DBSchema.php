@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\DBSchema
  *
- * @XmlEntity(xml="DBSchema")
+ * @OXM\XmlEntity(xml="DBSchema")
  */
 class DBSchema
 {

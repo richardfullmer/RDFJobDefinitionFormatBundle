@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Color
  *
- * @XmlEntity(xml="Color")
+ * @OXM\XmlEntity(xml="Color")
  */
 class Color
 {

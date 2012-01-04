@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\CylinderLayoutPreparations
  *
- * @XmlEntity(xml="CylinderLayoutPreparations")
+ * @OXM\XmlEntity(xml="CylinderLayoutPreparations")
  */
 class CylinderLayoutPreparations
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Person
  *
- * @XmlEntity(xml="Person")
+ * @OXM\XmlEntity(xml="Person")
  */
 class Person
 {

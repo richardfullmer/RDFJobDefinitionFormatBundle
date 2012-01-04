@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\PDLCreation
  *
- * @XmlEntity(xml="PDLCreation")
+ * @OXM\XmlEntity(xml="PDLCreation")
  */
 class PDLCreation
 {

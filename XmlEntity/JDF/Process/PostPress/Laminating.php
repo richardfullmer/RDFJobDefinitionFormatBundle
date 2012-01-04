@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\Laminating
  *
- * @XmlEntity(xml="Laminating")
+ * @OXM\XmlEntity(xml="Laminating")
  */
 class Laminating
 {

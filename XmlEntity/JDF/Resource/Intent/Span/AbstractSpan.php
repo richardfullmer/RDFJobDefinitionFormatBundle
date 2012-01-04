@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\Span;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\Span\AbstractSpan
  *
- * @XmlEntity(xml="AbstractSpan")
+ * @OXM\XmlEntity(xml="AbstractSpan")
  */
 class AbstractSpan
 {

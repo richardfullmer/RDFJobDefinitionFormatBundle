@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\GeneralID
  *
- * @XmlEntity(xml="GeneralID")
+ * @OXM\XmlEntity(xml="GeneralID")
  */
 class GeneralID
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\Shrinking
  *
- * @XmlEntity(xml="Shrinking")
+ * @OXM\XmlEntity(xml="Shrinking")
  */
 class Shrinking
 {

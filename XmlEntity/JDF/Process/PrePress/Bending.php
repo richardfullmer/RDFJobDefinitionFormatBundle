@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\Bending
  *
- * @XmlEntity(xml="Bending")
+ * @OXM\XmlEntity(xml="Bending")
  */
 class Bending
 {

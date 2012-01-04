@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\LaminatingParams
  *
- * @XmlEntity(xml="LaminatingParams")
+ * @OXM\XmlEntity(xml="LaminatingParams")
  */
 class LaminatingParams
 {

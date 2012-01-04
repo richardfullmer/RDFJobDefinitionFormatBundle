@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\CIELABMeasuringField
  *
- * @XmlEntity(xml="CIELABMeasuringField")
+ * @OXM\XmlEntity(xml="CIELABMeasuringField")
  */
 class CIELABMeasuringField
 {

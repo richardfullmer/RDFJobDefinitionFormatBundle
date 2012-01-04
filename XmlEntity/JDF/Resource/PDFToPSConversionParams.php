@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PDFToPSConversionParams
  *
- * @XmlEntity(xml="PDFToPSConversionParams")
+ * @OXM\XmlEntity(xml="PDFToPSConversionParams")
  */
 class PDFToPSConversionParams
 {

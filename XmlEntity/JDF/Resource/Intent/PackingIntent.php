@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\PackingIntent
  *
- * @XmlEntity(xml="PackingIntent")
+ * @OXM\XmlEntity(xml="PackingIntent")
  */
 class PackingIntent
 {

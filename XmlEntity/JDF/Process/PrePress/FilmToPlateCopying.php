@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\FilmToPlateCopying
  *
- * @XmlEntity(xml="FilmToPlateCopying")
+ * @OXM\XmlEntity(xml="FilmToPlateCopying")
  */
 class FilmToPlateCopying
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PageList
  *
- * @XmlEntity(xml="PageList")
+ * @OXM\XmlEntity(xml="PageList")
  */
 class PageList
 {

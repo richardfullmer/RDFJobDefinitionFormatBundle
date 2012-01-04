@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PDLResourceAlias
  *
- * @XmlEntity(xml="PDLResourceAlias")
+ * @OXM\XmlEntity(xml="PDLResourceAlias")
  */
 class PDLResourceAlias
 {

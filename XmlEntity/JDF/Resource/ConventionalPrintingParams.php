@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ConventionalPrintingParams
  *
- * @XmlEntity(xml="ConventionalPrintingParams")
+ * @OXM\XmlEntity(xml="ConventionalPrintingParams")
  */
 class ConventionalPrintingParams
 {

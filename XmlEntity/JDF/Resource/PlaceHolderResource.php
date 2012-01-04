@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PlaceHolderResource
  *
- * @XmlEntity(xml="PlaceHolderResource")
+ * @OXM\XmlEntity(xml="PlaceHolderResource")
  */
 class PlaceHolderResource
 {

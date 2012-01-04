@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\BendingParams
  *
- * @XmlEntity(xml="BendingParams")
+ * @OXM\XmlEntity(xml="BendingParams")
  */
 class BendingParams
 {

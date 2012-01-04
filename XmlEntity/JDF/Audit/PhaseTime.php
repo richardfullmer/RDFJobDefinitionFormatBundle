@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit\PhaseTime
  *
- * @XmlEntity(xml="PhaseTime")
+ * @OXM\XmlEntity(xml="PhaseTime")
  */
 class PhaseTime
 {

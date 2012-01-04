@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit\Merged
  *
- * @XmlEntity(xml="Merged")
+ * @OXM\XmlEntity(xml="Merged")
  */
 class Merged
 {

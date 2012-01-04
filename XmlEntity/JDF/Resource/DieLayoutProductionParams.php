@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\DieLayoutProductionParams
  *
- * @XmlEntity(xml="DieLayoutProductionParams")
+ * @OXM\XmlEntity(xml="DieLayoutProductionParams")
  */
 class DieLayoutProductionParams
 {

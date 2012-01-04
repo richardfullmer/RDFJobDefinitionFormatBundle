@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Disjointing
  *
- * @XmlEntity(xml="Disjointing")
+ * @OXM\XmlEntity(xml="Disjointing")
  */
 class Disjointing
 {

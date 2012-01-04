@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ImageReplacementParams
  *
- * @XmlEntity(xml="ImageReplacementParams")
+ * @OXM\XmlEntity(xml="ImageReplacementParams")
  */
 class ImageReplacementParams
 {

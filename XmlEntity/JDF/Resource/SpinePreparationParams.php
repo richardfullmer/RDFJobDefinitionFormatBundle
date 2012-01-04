@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\SpinePreparationParams
  *
- * @XmlEntity(xml="SpinePreparationParams")
+ * @OXM\XmlEntity(xml="SpinePreparationParams")
  */
 class SpinePreparationParams
 {

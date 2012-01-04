@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\DividingParams
  *
- * @XmlEntity(xml="DividingParams")
+ * @OXM\XmlEntity(xml="DividingParams")
  */
 class DividingParams
 {

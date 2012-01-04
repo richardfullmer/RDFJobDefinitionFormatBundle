@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ScreeningParams
  *
- * @XmlEntity(xml="ScreeningParams")
+ * @OXM\XmlEntity(xml="ScreeningParams")
  */
 class ScreeningParams
 {

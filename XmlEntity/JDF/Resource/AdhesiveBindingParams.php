@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\AdhesiveBindingParams
  *
- * @XmlEntity(xml="AdhesiveBindingParams")
+ * @OXM\XmlEntity(xml="AdhesiveBindingParams")
  */
 class AdhesiveBindingParams
 {

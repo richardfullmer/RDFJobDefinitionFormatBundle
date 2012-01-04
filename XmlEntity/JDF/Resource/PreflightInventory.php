@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PreflightInventory
  *
- * @XmlEntity(xml="PreflightInventory")
+ * @OXM\XmlEntity(xml="PreflightInventory")
  */
 class PreflightInventory
 {

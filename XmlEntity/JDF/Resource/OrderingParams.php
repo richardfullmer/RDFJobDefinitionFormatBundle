@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\OrderingParams
  *
- * @XmlEntity(xml="OrderingParams")
+ * @OXM\XmlEntity(xml="OrderingParams")
  */
 class OrderingParams
 {

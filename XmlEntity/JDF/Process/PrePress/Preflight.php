@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\Preflight
  *
- * @XmlEntity(xml="Preflight")
+ * @OXM\XmlEntity(xml="Preflight")
  */
 class Preflight
 {

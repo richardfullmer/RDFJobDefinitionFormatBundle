@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\AutomatedOverPrintParams
  *
- * @XmlEntity(xml="AutomatedOverPrintParams")
+ * @OXM\XmlEntity(xml="AutomatedOverPrintParams")
  */
 class AutomatedOverPrintParams
 {

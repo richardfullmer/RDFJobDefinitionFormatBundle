@@ -19,8 +19,10 @@
  
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
- * @XmlRootEntity(xml="JDF")
+ * @OXM\XmlRootEntity(xml="JDF")
  */
 class JDF
 {

@@ -19,10 +19,12 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
 
+use Doctrine\OXM\Mapping as OXM;
+
 /**
  * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\PalletizingParams
  *
- * @XmlEntity(xml="PalletizingParams")
+ * @OXM\XmlEntity(xml="PalletizingParams")
  */
 class PalletizingParams
 {
