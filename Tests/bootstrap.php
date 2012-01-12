@@ -34,3 +34,6 @@ spl_autoload_register(function($class) {
         return true;
     }
 });
+
+// load types for test
+\Doctrine\OXM\Types\Type::addType('jdfdatetime', "RDF\\JobDefinitionFormatBundle\\Types\\JDFDateTimeType");

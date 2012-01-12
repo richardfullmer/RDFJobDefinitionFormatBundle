@@ -17,23 +17,12 @@
  * <http://www.opensoftdev.com>.
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Tests\JDF;
 
 use RDF\JobDefinitionFormatBundle\Tests\MarshallerTestCase;
-use RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\PrintTalk;
  
-class PrintTalkEntityTest extends MarshallerTestCase
+class JDFEntityTest extends MarshallerTestCase
 {
-    public function testPrintTalkMarshalling()
-    {
-        $pt = new PrintTalk();
-
-        $xml = self::getMarshaller()->marshalToString($pt);
-
-        $this->assertXmlStringEqualsXmlString('<?xml version="1.0" encoding="UTF-8"?>
-                <PrintTalk xmlns="http://www.printtalk.org/schema_13" version="1.3"/>', $xml);
-    }
-
     /**
      * @dataProvider exampleProvider
      */
@@ -42,20 +31,29 @@ class PrintTalkEntityTest extends MarshallerTestCase
         $source = realpath($source);
         $marshaller = self::getMarshaller();
 
-        $pt = $marshaller->unmarshalFromStream("file://".$source);
+        $jmf = $marshaller->unmarshalFromStream("file://".$source);
 
-        $this->assertNotNull($pt);
+        $this->assertNotNull($jmf);
 
-        $unmarshalled = $marshaller->marshalToString($pt);
+        $unmarshalled = $marshaller->marshalToString($jmf);
 
-        $this->assertNotEmpty($unmarshalled);
+        $this->assertXmlStringEqualsXmlFile($source, $unmarshalled);
     }
 
     public function exampleProvider()
     {
         return array(
-            array(__DIR__ . "/examples/RFQ.xml"),
-//            array(__DIR__ . "/examples/Quotation.xml"),  // inf loop?
+            array(__DIR__ . "/examples/delivery.jdf"),
+            array(__DIR__ . "/examples/digital_delivery.jdf"),
+            array(__DIR__ . "/examples/post_merging.jdf"),
+            array(__DIR__ . "/examples/post_processing.jdf"),
+            array(__DIR__ . "/examples/post_spawning.jdf"),
+            array(__DIR__ . "/examples/pre_processing.jdf"),
+            array(__DIR__ . "/examples/pre_spawning.jdf"),
+            array(__DIR__ . "/examples/product.jdf"),
+            array(__DIR__ . "/examples/run_list.jdf"),
+            array(__DIR__ . "/examples/spawned.jdf"),
+            array(__DIR__ . "/examples/stripping_processes.jdf"),
         );
     }
 }

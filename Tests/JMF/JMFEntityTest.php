@@ -17,23 +17,12 @@
  * <http://www.opensoftdev.com>.
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Tests\JMF;
 
 use RDF\JobDefinitionFormatBundle\Tests\MarshallerTestCase;
-use RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\PrintTalk;
  
-class PrintTalkEntityTest extends MarshallerTestCase
+class JMFEntityTest extends MarshallerTestCase
 {
-    public function testPrintTalkMarshalling()
-    {
-        $pt = new PrintTalk();
-
-        $xml = self::getMarshaller()->marshalToString($pt);
-
-        $this->assertXmlStringEqualsXmlString('<?xml version="1.0" encoding="UTF-8"?>
-                <PrintTalk xmlns="http://www.printtalk.org/schema_13" version="1.3"/>', $xml);
-    }
-
     /**
      * @dataProvider exampleProvider
      */
@@ -42,11 +31,11 @@ class PrintTalkEntityTest extends MarshallerTestCase
         $source = realpath($source);
         $marshaller = self::getMarshaller();
 
-        $pt = $marshaller->unmarshalFromStream("file://".$source);
+        $jmf = $marshaller->unmarshalFromStream("file://".$source);
 
-        $this->assertNotNull($pt);
+        $this->assertNotNull($jmf);
 
-        $unmarshalled = $marshaller->marshalToString($pt);
+        $unmarshalled = $marshaller->marshalToString($jmf);
 
         $this->assertNotEmpty($unmarshalled);
     }
@@ -54,8 +43,13 @@ class PrintTalkEntityTest extends MarshallerTestCase
     public function exampleProvider()
     {
         return array(
-            array(__DIR__ . "/examples/RFQ.xml"),
-//            array(__DIR__ . "/examples/Quotation.xml"),  // inf loop?
+            array(__DIR__ . "/examples/known_messages_query.jmf"),
+            array(__DIR__ . "/examples/known_messages_response.jmf"),
+            array(__DIR__ . "/examples/status_query.jmf"),
+            array(__DIR__ . "/examples/status_response.jmf"),
+            array(__DIR__ . "/examples/status_signal_1.jmf"),
+            array(__DIR__ . "/examples/status_signal_2.jmf"),
+            array(__DIR__ . "/examples/status_signal_3.jmf"),
         );
     }
 }
