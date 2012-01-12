@@ -15,6 +15,15 @@ if (file_exists($file = __DIR__.'/../vendor/.composer/autoload.php')) {
     throw new RuntimeException('Install dependencies to run test suite.');
 }
 
+use Doctrine\Common\Annotations\AnnotationRegistry;
+
+AnnotationRegistry::registerLoader(function($class) use ($autoload) {
+    $autoload->loadClass($class);
+    return class_exists($class, false);
+});
+AnnotationRegistry::registerFile(__DIR__.'/../vendor/doctrine/oxm/lib/Doctrine/OXM/Mapping/Driver/DoctrineAnnotations.php');
+
+
 spl_autoload_register(function($class) {
     if (0 === strpos($class, 'RDF\\JobDefinitionFormatBundle\\')) {
         $path = __DIR__.'/../'.implode('/', array_slice(explode('\\', $class), 2)).'.php';

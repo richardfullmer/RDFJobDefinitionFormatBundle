@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PrintTalk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://www.printtalk.org/schema"
+           xmlns:jdf="http://www.CIP4.org/JDFSchema_1_1"
+           xsi:schemaLocation="http://www.printtalk.org/schema PrintTalk_1_1.xsd" version="1.1"
+           payloadID="107778"
+           timestamp="2007-07-25T22:39-08:00">
+    <!--version: This is the PrintTalk version; borrowed from cXML. -->
+    <!--payloadID: This is transport unique ID of the message; borrowed from cXML. -->
+    <Header>
+        <From>
+            <Credential domain="ECompany.com">
+                <Identity>JJ Printing</Identity>
+            </Credential>
+            <Credential domain="DUNS">
+                <Identity>06-358-9998</Identity>
+            </Credential>
+        </From>
+        <To>
+            <Credential domain="DNS">
+                <Identity>www.billsfinebooks.com</Identity>
+            </Credential>
+            <Credential domain="ECompany.com">
+                <Identity>Bill's Fine Books</Identity>
+            </Credential>
+            <Credential domain="DUNS">
+                <Identity>06-388-7745</Identity>
+            </Credential>
+        </To>
+        <Sender>
+            <Credential domain="DNS">
+                <Identity>www.JJPrinting.com</Identity>
+                <SharedSecret>rosebud</SharedSecret>
+            </Credential>
+            <UserAgent>EFD 6.0</UserAgent>
+        </Sender>
+    </Header>
+    <Request>
+        <Quotation AgentID="Carlos" AgentDisplayName="Carlos Chavez"
+                   RequestDate="2007-07-25T10:00-08:00"
+                   BusinessID="Quote744910" BusinessRefID="RFQ_A3317" Currency="USD"
+                   Estimate="true" Expires="2007-08-26T1700-0800">
+            <!--Print Provider sends a non-binding price. Just an estimate-->
+            <Quote QuoteID="Quote_1">
+                <Pricing>
+                    <Price LineID="DI1_1" DescriptiveName="Hard Cover Books" Amount="7500" Unit="copies" Price="24150.00">
+                        <Additional Amount="1000" Price="2650.00"/>
+                        <jdf:Comment>Estimated price $3.22 per book. Additional price $2.65 per
+                            book + shipping</jdf:Comment>
+                    </Price>
+                    <Price LineID="DI1_2" DescriptiveName="Shipping" Price="1233.00">
+                        <jdf:Comment>Shipped UPS book rate</jdf:Comment>
+                    </Price>
+                    <Price LineID="DI2_1" DescriptiveName="Soft Cover Book" Amount="7500"
+                           Unit="copies" Price="8800.00">
+                        <Additional Amount="1000" Price="1230.00"/>
+                        <jdf:Comment>Estimated price $1.76 per book. Additional price $1.23 per
+                            book + shipping </jdf:Comment>
+                    </Price>
+                    <Price LineID="DI2_2" DescriptiveName="Shipping" Price="783.00">
+                        <jdf:Comment>Shipped UPS book rate</jdf:Comment>
+                    </Price>
+                </Pricing>
+                <jdf:JDF DescriptiveName="224 Page hard and soft cover book" ID="JDF000-Root"
+                         JobID="BuyerJob001" Type="Product" Status="Waiting" Version="1.1"
+                         xmlns="http://www.CIP4.org/JDFSchema_1_1">
+                    <!--JobID: sender's reference to a Job/project. -->
+                    <!--Version: JDF version. -->
+                    <AuditPool>
+                        <!--Not required by PrintTalk, may be used at the discretion of the document
+                       creator. -->
+                        <Created Author="PrintTalk" TimeStamp="2007-07-1T11:20-08:00"/>
+                    </AuditPool>
+                    <ResourcePool>
+                        <CustomerInfo CustomerID="pb4653/99">
+                            <ContactRef rRef="Contact01"/>
+                        </CustomerInfo>
+                        <DeliveryIntent ID="Delivery001" Class="Intent" Status="Available">
+                            <DropIntent>
+                                <Required DataType="TimeSpan" Preferred="2007-09-30T09:30-8:00"/>
+                                <!--Date by which the Product is to be delivered-->
+                                <ContactRef rRef="Contact02"/>
+                                <DropItemIntent Amount="7500" >
+                                    <ComponentRef rRef="Item001(HardBook)"/>
+                                    <jdf:GeneralID IDUsage="LineID" IDValue="DI1_1"/>
+                                    <jdf:GeneralID IDUsage="LineID" IDValue="DI1_2"/>
+                                </DropItemIntent>
+                                <DropItemIntent Amount="5000" >
+                                    <ComponentRef rRef="Item003(SoftBook)"/>
+                                    <jdf:GeneralID IDUsage="LineID" IDValue="DI2_1"/>
+                                    <jdf:GeneralID IDUsage="LineID" IDValue="DI2_2"/>
+                                </DropItemIntent>
+                            </DropIntent>
+                            <Comment>Delivery of hardcover and softcover Job</Comment>
+                        </DeliveryIntent>
+                        <Company ID="Company01" Class="Parameter" Status="Available"
+                                 OrganizationName="Mega Corp"/>
+                        <Contact ID="Contact01" Class="Parameter" Status="Available"
+                                 ContactTypes="Customer Billing">
+                            <Address Street="820 N. French Street" City="Wilmington" Region="DE"
+                                     PostalCode="19801">
+                                <ExtendedAddress>Attention: Accounts Payable</ExtendedAddress>
+                            </Address>
+                            <Person JobTitle="Purchasing Manager" FirstName="Lisa"
+                                    FamilyName="Luft"/>
+                            <CompanyRef rRef="Company01"/>
+                        </Contact>
+                        <Contact ID="Contact02" Class="Parameter" Status="Available"
+                                 ContactTypes="Delivery">
+                            <Address Street="555 Maple Drive" City="San Mateo" Region="CA"
+                                     PostalCode="94403">
+                                <ExtendedAddress>Suite 245</ExtendedAddress>
+                            </Address>
+                            <Person JobTitle="Head of Book Division" FirstName="William"
+                                    FamilyName="Johnson"/>
+                            <CompanyRef rRef="Company01"/>
+                        </Contact>
+                    </ResourcePool>
+                    <ResourceLinkPool>
+                        <DeliveryIntentLink rRef="Delivery001" Usage="Input"/>
+                        <CustomerInfoLink rRef="pb4653/99" Usage="Input"/>
+                    </ResourceLinkPool>
+                    <JDF DescriptiveName="224 Page hard case bound book with a 4/0 dust jacket"
+                         ID="JDF001(HardBook)" Type="Product" Status="Waiting">
+                        <!--For Quote, whatever JDF "Product" Elements necessary to specify components to
+                      be delivered. -->
+                        <ResourcePool>
+                            <Component ID="Item001(HardBook)" Class="Quantity" Status="Unavailable"
+                                       DescriptiveName="224 Page hard case bound book with a 4/0 dust jacket"
+                                       ComponentType="FinalProduct"/>
+                            <LayoutIntent ID="Size001(Finished)" Class="Intent" Status="Available">
+                                <Dimensions DataType="XYPairSpan" Preferred="612 792"
+                                            Range="576 720~648 864"/>
+                                <Pages DataType="IntegerSpan" Preferred="224"/>
+                            </LayoutIntent>
+                            <BindingIntent ID="Bind001(HardCover)" Class="Intent" Status="Available">
+                                <BindingType DataType="EnumerationSpan" Preferred="HardCover"/>
+                                <BindingLength DataType="EnumerationSpan" Preferred="Long"/>
+                            </BindingIntent>
+                        </ResourcePool>
+                        <ResourceLinkPool>
+                            <ComponentLink rRef="Item001(HardBook)" Usage="Output"/>
+                            <ComponentLink rRef="Item002(HardCase)" Usage="Input"
+                                           ProcessUsage="Cover"/>
+                            <ComponentLink rRef="Item004(Text)" Usage="Input"/>
+                            <ComponentLink rRef="Item006(DustJacket)" Usage="Input"/>
+                            <BindingIntentLink rRef="Bind001(HardCover)" Usage="Input"/>
+                            <LayoutIntentLink rRef="Size001(Finished)" Usage="Input"/>
+                        </ResourceLinkPool>
+                        <JDF DescriptiveName="DustJacket for Hard Cover" ID="JDF004(DustJacket)"
+                             Type="Product" Status="Waiting">
+                            <ResourcePool>
+                                <Component ID="Item006(DustJacket)" Class="Quantity"
+                                           Status="Unavailable" DescriptiveName="Dust Jacket"
+                                           ComponentType="PartialProduct"/>
+                                <ColorIntent ID="Color002(DustJacket)" Class="Intent" Status="Available">
+                                    <Coverage DataType="NumberSpan" Preferred="50"/>
+                                    <ColorStandard DataType="NameSpan" Preferred="CMYK"
+                                                   Priority="Required"/>
+                                    <InkManufacturer DataType="NameSpan" Preferred="ToyoCrayola"
+                                                     Priority="Required"/>
+                                </ColorIntent>
+                                <MediaIntent ID="Media002(DustJacket)" Class="Intent"
+                                             Status="Available">
+                                    <FrontCoatings DataType="EnumerationSpan" Preferred="None"/>
+                                    <StockType DataType="NameSpan" Preferred="Offset"/>
+                                </MediaIntent>
+                            </ResourcePool>
+                            <ResourceLinkPool>
+                                <ComponentLink rRef="Item006(DustJacket)" Usage="Output"/>
+                                <ColorIntentLink rRef="Color002(DustJacket)" Usage="Input"/>
+                                <LayoutIntentLink rRef="Size001(Finished)" Usage="Input"/>
+                                <MediaIntentLink rRef="Media002(DustJacket)" Usage="Input"/>
+                            </ResourceLinkPool>
+                        </JDF>
+                        <JDF DescriptiveName="Case for Hard Cover" ID="JDF006(Case)" Type="Product"
+                             Status="Waiting">
+                            <ResourcePool>
+                                <Component ID="Item002(HardCase)" Class="Quantity"
+                                           Status="Unavailable" DescriptiveName="Book Case"
+                                           ComponentType="PartialProduct"/>
+                                <MediaIntent ID="Media001(Case)" Class="Intent" Status="Available">
+                                    <MediaColor DataType="EnumerationSpan" Preferred="Black"/>
+                                    <StockType DataType="NameSpan" Preferred="Cloth"/>
+                                </MediaIntent>
+                            </ResourcePool>
+                            <ResourceLinkPool>
+                                <ComponentLink rRef="Item002(HardCase)" Usage="Output"/>
+                                <LayoutIntentLink rRef="Size001(Finished)" Usage="Input"/>
+                                <MediaIntentLink rRef="Media001(Case)" Usage="Input"/>
+                            </ResourceLinkPool>
+                        </JDF>
+                    </JDF>
+                    <JDF DescriptiveName="224 Page soft cover, perfect bound book"
+                         ID="JDF002(SoftBook)" Type="Product" Status="Waiting">
+                        <ResourcePool>
+                            <Component ID="Item003(SoftBook)" Class="Quantity" Status="Unavailable"
+                                       DescriptiveName="soft cover, perfect bound book"
+                                       ComponentType="FinalProduct"/>
+                            <BindingIntent ID="Bind002(SoftCover)" Class="Intent" Status="Available">
+                                <BindingType DataType="EnumerationSpan" Preferred="SoftCover"/>
+                            </BindingIntent>
+                        </ResourcePool>
+                        <ResourceLinkPool>
+                            <ComponentLink rRef="Item003(SoftBook)" Usage="Output"/>
+                            <ComponentLink rRef="Item005(SoftCover)" Usage="Input"
+                                           ProcessUsage="Cover"/>
+                            <ComponentLink rRef="Item004(Text)" Usage="Input"/>
+                            <LayoutIntentLink rRef="Size001(Finished)" Usage="Input"/>
+                            <BindingIntentLink rRef="Bind002(SoftCover)" Usage="Input"/>
+                        </ResourceLinkPool>
+                        <JDF DescriptiveName="Soft Cover" ID="JDF005(SoftCover)" Type="Product"
+                             Status="Waiting">
+                            <ResourcePool>
+                                <Component ID="Item005(SoftCover)" Class="Quantity"
+                                           Status="Unavailable" DescriptiveName="soft cover"
+                                           ComponentType="PartialProduct"/>
+                                <MediaIntent ID="Media003(SoftCover)" Class="Intent"
+                                             Status="Available">
+                                    <FrontCoatings DataType="EnumerationSpan" Preferred="None"/>
+                                    <StockType DataType="NameSpan" Preferred="Offset"/>
+                                </MediaIntent>
+                                <ColorIntent ID="Color003(SoftCover)" Class="Intent" Status="Available">
+                                    <Coverage DataType="NumberSpan" Preferred="50"/>
+                                    <ColorStandard DataType="NameSpan" Preferred="CMYK"
+                                                   Priority="Required"/>
+                                    <InkManufacturer DataType="NameSpan" Preferred="ToyoCrayola"
+                                                     Priority="Required"/>
+                                </ColorIntent>
+                            </ResourcePool>
+                            <ResourceLinkPool>
+                                <ComponentLink rRef="Item005(SoftCover)" Usage="Output"/>
+                                <LayoutIntentLink rRef="Size001(Finished)" Usage="Input" />
+                                <ColorIntentLink rRef="Color003(SoftCover)" Usage="Input"/>
+                                <MediaIntentLink rRef="Media003(SoftCover)" Usage="Input"/>
+                            </ResourceLinkPool>
+                        </JDF>
+                    </JDF>
+                    <JDF DescriptiveName="text for 224 Page book" ID="JDF003(Text)" Type="Product"
+                         Status="Waiting">
+                        <ResourcePool>
+                            <Component ID="Item004(Text)" Class="Quantity" Status="Unavailable"
+                                       DescriptiveName="Reader text for hard or soft cover 224 Page book"
+                                       ComponentType="PartialProduct"/>
+                            <ColorIntent ID="Color001(Text)" Class="Intent" Status="Available">
+                                <ColorStandard DataType="NameSpan" Preferred="MonoChrome"/>
+                                <Coverage DataType="NumberSpan" Preferred="10"/>
+                                <InkManufacturer Range="Black" DataType="NameSpan"/>
+                            </ColorIntent>
+                            <MediaIntent ID="Media001(Text)" Class="Intent" Status="Available">
+                                <FrontCoatings DataType="EnumerationSpan" Preferred="None"/>
+                                <Opacity DataType="EnumerationSpan" Preferred="Opaque"/>
+                                <StockType DataType="NameSpan" Preferred="Bond"/>
+                                <USWeight DataType="NumberSpan" Preferred="9"/>
+                            </MediaIntent>
+                        </ResourcePool>
+                        <ResourceLinkPool>
+                            <ComponentLink rRef="Item004(Text)" Usage="Output"/>
+                            <ColorIntentLink rRef="Color001(Text)" Usage="Input"/>
+                            <MediaIntentLink rRef="Media001(Text)" Usage="Input"/>
+                            <LayoutIntentLink rRef="Size001(Finished)" Usage="Input"/>
+                        </ResourceLinkPool>
+                    </JDF>
+                </jdf:JDF>
+            </Quote>
+        </Quotation >
+    </Request>
+</PrintTalk>
+
