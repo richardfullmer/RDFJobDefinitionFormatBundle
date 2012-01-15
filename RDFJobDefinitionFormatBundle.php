@@ -16,6 +16,7 @@ class RDFJobDefinitionFormatBundle extends Bundle
     public static function registerOXMTypes()
     {
         $types = array(
+            'JDF.Boolean' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\BooleanType",
             'JDF.CMYKColor' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\CMYKColorType",
             'JDF.DateTime' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DateTimeType",
             'JDF.DateTimeRange' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DateTimeRangeType",

@@ -36,24 +36,34 @@ class CMYKColorType extends Type
         return 'JDF.CMYKColor';
     }
 
-    public function convertToXmlValue($range)
+    /**
+     * @param \RDF\JobDefinitionFormatBundle\Type\CMYKColor $color
+     * @return null|string
+     * @throws \Doctrine\OXM\Types\ConversionException
+     */
+    public function convertToXmlValue($color)
     {
-        if ($range === null) {
+        if ($color === null) {
             return null;
         }
 
-        if (!$range instanceof CMYKColor) {
-            throw ConversionException::conversionFailed($range, $this->getName());
+        if (!$color instanceof CMYKColor) {
+            throw ConversionException::conversionFailed($color, $this->getName());
         }
 
         return implode(' ', array(
-            $range->getCyan(),
-            $range->getMagenta(),
-            $range->getYellow(),
-            $range->getBlack(),
+            $color->getCyan(),
+            $color->getMagenta(),
+            $color->getYellow(),
+            $color->getBlack(),
         ));
     }
 
+    /**
+     * @param $value
+     * @return null|\RDF\JobDefinitionFormatBundle\Type\CMYKColor
+     * @throws \Doctrine\OXM\Types\ConversionException
+     */
     public function convertToPHPValue($value)
     {
         if ($value === null) {
