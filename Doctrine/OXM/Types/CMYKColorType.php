@@ -36,21 +36,21 @@ class CMYKColorType extends Type
         return 'JDF.CMYKColor';
     }
 
-    public function convertToXmlValue($list)
+    public function convertToXmlValue($range)
     {
-        if ($list === null) {
+        if ($range === null) {
             return null;
         }
 
-        if (!$list instanceof CMYKColor) {
-            throw ConversionException::conversionFailed($list, $this->getName());
+        if (!$range instanceof CMYKColor) {
+            throw ConversionException::conversionFailed($range, $this->getName());
         }
 
         return implode(' ', array(
-            $list->getCyan(),
-            $list->getMagenta(),
-            $list->getYellow(),
-            $list->getBlack(),
+            $range->getCyan(),
+            $range->getMagenta(),
+            $range->getYellow(),
+            $range->getBlack(),
         ));
     }
 

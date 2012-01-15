@@ -36,32 +36,32 @@ class DateTimeRangeType extends Type
         return 'JDF.DateTimeRange';
     }
 
-    public function convertToXmlValue($list)
+    public function convertToXmlValue($range)
     {
-        /** @var \RDF\JobDefinitionFormatBundle\Type\DateTimeRange $list */
-        if ($list === null) {
+        /** @var \RDF\JobDefinitionFormatBundle\Type\DateTimeRange $range */
+        if ($range === null) {
             return null;
         }
 
-        if (!$list instanceof DateTimeRange) {
-            throw ConversionException::conversionFailed($list, $this->getName());
+        if (!$range instanceof DateTimeRange) {
+            throw ConversionException::conversionFailed($range, $this->getName());
         }
 
         $dateTimeType = Type::getType('JDF.DateTime');
         $encoded = '';
 
-        if (!$list->hasStart()) {
+        if (!$range->hasStart()) {
             $encoded .= '-INF';
         } else {
-            $encoded .= $dateTimeType->convertToXmlValue($list->getStart());
+            $encoded .= $dateTimeType->convertToXmlValue($range->getStart());
         }
 
         $encoded .= ' ~ ';
 
-        if (!$list->hasEnd()) {
+        if (!$range->hasEnd()) {
             $encoded .= 'INF';
         } else {
-            $encoded .= $dateTimeType->convertToXmlValue($list->getEnd());
+            $encoded .= $dateTimeType->convertToXmlValue($range->getEnd());
         }
 
         return $encoded;

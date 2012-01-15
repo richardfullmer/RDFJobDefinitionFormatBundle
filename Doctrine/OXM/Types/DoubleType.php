@@ -36,21 +36,21 @@ class DoubleType extends Type
     }
 
     /**
-     * @param \RDF\JobDefinitionFormatBundle\Type\Double $list
+     * @param \RDF\JobDefinitionFormatBundle\Type\Double $range
      * @return null|string
      * @throws \Doctrine\OXM\Types\ConversionException
      */
-    public function convertToXmlValue($list)
+    public function convertToXmlValue($range)
     {
-        if ($list === null) {
+        if ($range === null) {
             return null;
         }
 
-        if (!$list instanceof Double) {
-            throw ConversionException::conversionFailed($list, $this->getName());
+        if (!$range instanceof Double) {
+            throw ConversionException::conversionFailed($range, $this->getName());
         }
 
-        return (string) $list->getValue();
+        return (string) $range->getValue();
     }
 
     /**

@@ -21,41 +21,41 @@ namespace RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types;
 
 use Doctrine\OXM\Types\Type;
 use Doctrine\OXM\Types\ConversionException;
-use RDF\JobDefinitionFormatBundle\Type\DateTimeRange;
-use RDF\JobDefinitionFormatBundle\Type\DateTimeRangeList;
+use RDF\JobDefinitionFormatBundle\Type\DoubleRange;
 
 /**
- * A DateTimeRange is represented by two dateTime or infinity tokens separated
- * by the whitespace “~” whitespace sequence.
+ * A DoubleRange is represented by two double values separated
+ * by a “~” (tilde) character and OPTIONAL additional whitespace.
+ *
+ * Note: It is now RECOMMENDED that the ‘~’ is surrounded by whitespace to
+ * aid validation and parsing.
  *
  * @author Richard Fullmer <richardfullmer@gmail.com>
  */
-class DateTimeRangeListType extends Type
+class DoubleRangeType extends Type
 {
     public function getName()
     {
-        return 'JDF.DateTimeRangeList';
+        return 'JDF.DoubleRange';
     }
 
     public function convertToXmlValue($range)
     {
-        /** @var \RDF\JobDefinitionFormatBundle\Type\DateTimeRangeList $range */
+        /** @var \RDF\JobDefinitionFormatBundle\Type\DoubleRange $range */
         if ($range === null) {
             return null;
         }
 
-        if (!$range instanceof DateTimeRangeList) {
+        if (!$range instanceof DoubleRange) {
             throw ConversionException::conversionFailed($range, $this->getName());
         }
 
-        $dateTimeRangeType = Type::getType('JDF.DateTimeRange');
-        $encodedValues = array();
+        $dateTimeType = Type::getType('JDF.Double');
 
-        foreach ($range as $dateTimeRange) {
-            $encodedValues[] = $dateTimeRangeType->convertToXmlValue($dateTimeRange);
-        }
-
-        return implode(' ', $encodedValues);
+        return implode(' ~ ', array(
+            $dateTimeType->convertToXmlValue($range->getStart()),
+            $dateTimeType->convertToXmlValue($range->getEnd())
+        ));
     }
 
     public function convertToPHPValue($value)
@@ -64,17 +64,16 @@ class DateTimeRangeListType extends Type
             return null;
         }
 
-        if (!preg_match_all('/[a-zA-Z0-9~\-:\+]* ~ [a-zA-Z0-9~\-:\+]*/', $value, $ranges)) {
+        $values = explode('~', $value);
+
+        if (!is_array($values)) {
             throw ConversionException::conversionFailed($value, $this->getName());
         }
 
-        $dateTimeRangeType = Type::getType('JDF.DateTimeRange');
-        $dateTimeRangeList = new DateTimeRangeList();
+        $dateTimeType = Type::getType('JDF.Double');
+        $start = trim($values[0]);
+        $end = trim($values[1]);
 
-        foreach ($ranges[0] as $range) {
-            $dateTimeRangeList->add($dateTimeRangeType->convertToPHPValue($range));
-        }
-
-        return $dateTimeRangeList;
+        return new DoubleRange($dateTimeType->convertToPHPValue($start), $dateTimeType->convertToPHPValue($end));
     }
 }

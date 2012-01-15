@@ -36,21 +36,21 @@ class DoubleListType extends Type
         return 'JDF.DoubleList';
     }
 
-    public function convertToXmlValue($list)
+    public function convertToXmlValue($range)
     {
-        /** @var \RDF\JobDefinitionFormatBundle\Type\DoubleList $list */
-        if ($list === null) {
+        /** @var \RDF\JobDefinitionFormatBundle\Type\DoubleList $range */
+        if ($range === null) {
             return null;
         }
 
-        if (!$list instanceof DoubleList) {
-            throw ConversionException::conversionFailed($list, $this->getName());
+        if (!$range instanceof DoubleList) {
+            throw ConversionException::conversionFailed($range, $this->getName());
         }
 
         $doubleType = Type::getType('JDF.Double');
         $encodedValues = array();
 
-        foreach ($list as $dateTimeRange) {
+        foreach ($range as $dateTimeRange) {
             $encodedValues[] = $doubleType->convertToXmlValue($dateTimeRange);
         }
 

@@ -22,6 +22,7 @@ class RDFJobDefinitionFormatBundle extends Bundle
             'JDF.DateTimeRangeList' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DateTimeRangeListType",
             'JDF.Double' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DoubleType",
             'JDF.DoubleList' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DoubleListType",
+            'JDF.DoubleRange' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DoubleRangeType",
         );
 
         foreach ($types as $name => $class) {
