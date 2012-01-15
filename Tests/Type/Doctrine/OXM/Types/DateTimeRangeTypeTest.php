@@ -24,12 +24,12 @@ class DateTimeRangeTypeTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->type = Type::getType('datetimerange');
+        $this->type = Type::getType('JDF.DateTimeRange');
     }
 
     public function testName()
     {
-        $this->assertEquals('datetimerange', $this->type->getName());
+        $this->assertEquals('JDF.DateTimeRange', $this->type->getName());
     }
 
     public function testDateTimeRangeConvertsToXmlValue()

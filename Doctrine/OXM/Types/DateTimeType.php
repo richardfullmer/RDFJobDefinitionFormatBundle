@@ -27,13 +27,13 @@ use Doctrine\OXM\Types\ConversionException;
  *
  * @since 2.0
  */
-class JDFDateTimeType extends Type
+class DateTimeType extends Type
 {
     const FORMAT = 'Y-m-d\TG:i:sO';
 
     public function getName()
     {
-        return 'jdfdatetime';
+        return 'JDF.DateTime';
     }
 
     public function convertToXmlValue($value)

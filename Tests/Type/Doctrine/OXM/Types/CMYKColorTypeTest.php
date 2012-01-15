@@ -24,12 +24,12 @@ class CMYKColorTypeTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->type = Type::getType('cmykcolor');
+        $this->type = Type::getType('JDF.CMYKColor');
     }
 
     public function testName()
     {
-        $this->assertEquals('cmykcolor', $this->type->getName());
+        $this->assertEquals('JDF.CMYKColor', $this->type->getName());
     }
 
     public function testColorConvertsToXmlValue()

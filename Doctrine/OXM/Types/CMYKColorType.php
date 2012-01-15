@@ -33,7 +33,7 @@ class CMYKColorType extends Type
 {
     public function getName()
     {
-        return 'cmykcolor';
+        return 'JDF.CMYKColor';
     }
 
     public function convertToXmlValue($value)

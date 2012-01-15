@@ -36,6 +36,6 @@ spl_autoload_register(function($class) {
 });
 
 // load types for test
-\Doctrine\OXM\Types\Type::addType('jdfdatetime', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\JDFDateTimeType");
-\Doctrine\OXM\Types\Type::addType('cmykcolor', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\CMYKColorType");
-\Doctrine\OXM\Types\Type::addType('datetimerange', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DateTimeRangeType");
+\Doctrine\OXM\Types\Type::addType('JDF.DateTime', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DateTimeType");
+\Doctrine\OXM\Types\Type::addType('JDF.CMYKColor', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\CMYKColorType");
+\Doctrine\OXM\Types\Type::addType('JDF.DateTimeRange', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\DateTimeRangeType");

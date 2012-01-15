@@ -33,7 +33,7 @@ class DateTimeRangeType extends Type
 {
     public function getName()
     {
-        return 'datetimerange';
+        return 'JDF.DateTimeRange';
     }
 
     public function convertToXmlValue($value)
@@ -47,7 +47,7 @@ class DateTimeRangeType extends Type
             throw ConversionException::conversionFailed($value, $this->getName());
         }
 
-        $dateTimeType = Type::getType('jdfdatetime');
+        $dateTimeType = Type::getType('JDF.DateTime');
         $encoded = '';
 
         if (!$value->hasStart()) {
@@ -79,7 +79,7 @@ class DateTimeRangeType extends Type
             throw ConversionException::conversionFailed($value, $this->getName());
         }
 
-        $dateTimeType = Type::getType('jdfdatetime');
+        $dateTimeType = Type::getType('JDF.DateTime');
         $start = $values[0];
         $end = $values[1];
 
