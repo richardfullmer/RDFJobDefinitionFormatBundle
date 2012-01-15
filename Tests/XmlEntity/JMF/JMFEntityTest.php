@@ -17,11 +17,11 @@
  * <http://www.opensoftdev.com>.
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests\JDF;
+namespace RDF\JobDefinitionFormatBundle\Tests\XmlEntity\JMF;
 
-use RDF\JobDefinitionFormatBundle\Tests\MarshallerTestCase;
+use RDF\JobDefinitionFormatBundle\Tests\XmlEntity\MarshallerTestCase;
  
-class JDFEntityTest extends MarshallerTestCase
+class JMFEntityTest extends MarshallerTestCase
 {
     /**
      * @dataProvider exampleProvider
@@ -37,23 +37,19 @@ class JDFEntityTest extends MarshallerTestCase
 
         $unmarshalled = $marshaller->marshalToString($jmf);
 
-        $this->assertXmlStringEqualsXmlFile($source, $unmarshalled);
+        $this->assertNotEmpty($unmarshalled);
     }
 
     public function exampleProvider()
     {
         return array(
-            array(__DIR__ . "/examples/delivery.jdf"),
-            array(__DIR__ . "/examples/digital_delivery.jdf"),
-            array(__DIR__ . "/examples/post_merging.jdf"),
-            array(__DIR__ . "/examples/post_processing.jdf"),
-            array(__DIR__ . "/examples/post_spawning.jdf"),
-            array(__DIR__ . "/examples/pre_processing.jdf"),
-            array(__DIR__ . "/examples/pre_spawning.jdf"),
-            array(__DIR__ . "/examples/product.jdf"),
-            array(__DIR__ . "/examples/run_list.jdf"),
-            array(__DIR__ . "/examples/spawned.jdf"),
-            array(__DIR__ . "/examples/stripping_processes.jdf"),
+            array(__DIR__ . "/examples/known_messages_query.jmf"),
+            array(__DIR__ . "/examples/known_messages_response.jmf"),
+            array(__DIR__ . "/examples/status_query.jmf"),
+            array(__DIR__ . "/examples/status_response.jmf"),
+            array(__DIR__ . "/examples/status_signal_1.jmf"),
+            array(__DIR__ . "/examples/status_signal_2.jmf"),
+            array(__DIR__ . "/examples/status_signal_3.jmf"),
         );
     }
 }

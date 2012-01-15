@@ -1,8 +1,6 @@
 <JDF xmlns="http://www.CIP4.org/JDFSchema_1_1"
-     DescriptiveName="ArtDeliveryIntent translated to Delivery and
-DigitalDelivery processes" ID="ID000"
-     Status="InProgress" Type="Product" JobPartID="ID879" Version="1.4"
-        >
+     DescriptiveName="ArtDeliveryIntent translated to Delivery and DigitalDelivery processes" ID="ID000"
+     Status="InProgress" Type="Product" JobPartID="ID879" Version="1.4">
     <ResourcePool>
         <NodeInfo ID="N01" Class="Parameter" Status="Available"
                   JobPriority="100"/>
@@ -116,8 +114,7 @@ DigitalDelivery processes" ID="ID000"
                         Start="2003-01-08T12:27:40Z" TimeStamp="2003-01-08T12:27:56Z"/>
         </AuditPool>
     </JDF>
-    <JDF DescriptiveName="The Return of product and digital media with intermediate
-materials"
+    <JDF DescriptiveName="The Return of product and digital media with intermediate materials"
          ID="X00000" Status="Waiting" Type="Delivery" JobPartID="ID878" >
         <ResourceLinkPool>
             <ComponentLink Usage="Output" rRef="Item001"/>

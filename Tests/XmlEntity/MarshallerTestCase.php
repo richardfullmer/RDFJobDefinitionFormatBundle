@@ -4,7 +4,7 @@
  * 
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests;
+namespace RDF\JobDefinitionFormatBundle\Tests\XmlEntity;
 
 
 use Doctrine\OXM\Configuration;
@@ -31,7 +31,7 @@ class MarshallerTestCase extends \PHPUnit_Framework_TestCase
     {
         if (!self::$marshaller) {
             $config = new Configuration();
-            $config->setMetadataDriverImpl(AnnotationDriver::create(__DIR__."/../XmlEntity"));
+            $config->setMetadataDriverImpl(AnnotationDriver::create(__DIR__."/../../XmlEntity"));
             $config->setMetadataCacheImpl(new \Doctrine\Common\Cache\ArrayCache());
 
             $metadataFactory = new ClassMetadataFactory($config);
