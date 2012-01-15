@@ -48,23 +48,11 @@ class DateTimeRangeType extends Type
         }
 
         $dateTimeType = Type::getType('JDF.DateTime');
-        $encoded = '';
 
-        if (!$range->hasStart()) {
-            $encoded .= '-INF';
-        } else {
-            $encoded .= $dateTimeType->convertToXmlValue($range->getStart());
-        }
-
-        $encoded .= ' ~ ';
-
-        if (!$range->hasEnd()) {
-            $encoded .= 'INF';
-        } else {
-            $encoded .= $dateTimeType->convertToXmlValue($range->getEnd());
-        }
-
-        return $encoded;
+        return implode(' ~ ', array(
+            $dateTimeType->convertToXmlValue($range->getStart()),
+            $dateTimeType->convertToXmlValue($range->getEnd())
+        ));
     }
 
     public function convertToPHPValue($value)
@@ -73,28 +61,17 @@ class DateTimeRangeType extends Type
             return null;
         }
 
-        $values = explode(' ~ ', $value);
+        $values = explode('~', $value);
 
         if (!is_array($values)) {
             throw ConversionException::conversionFailed($value, $this->getName());
         }
 
         $dateTimeType = Type::getType('JDF.DateTime');
-        $start = $values[0];
-        $end = $values[1];
 
-        if ($start !== '-INF') {
-            $start = $dateTimeType->convertToPHPValue($start);
-        } else {
-            $start = null;
-        }
-
-        if ($end !== 'INF') {
-            $end = $dateTimeType->convertToPHPValue($end);
-        } else {
-            $end = null;
-        }
-
-        return new DateTimeRange($start, $end);
+        return new DateTimeRange(
+            $dateTimeType->convertToPHPValue(trim($values[0])),
+            $dateTimeType->convertToPHPValue(trim($values[1]))
+        );
     }
 }

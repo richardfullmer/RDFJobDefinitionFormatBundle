@@ -6,6 +6,7 @@
 
 namespace RDF\JobDefinitionFormatBundle\Tests\Doctrine\OXM\Types;
 
+use RDF\JobDefinitionFormatBundle\Type\DateTime;
 use RDF\JobDefinitionFormatBundle\Type\DateTimeRange;
 use RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types\DateTimeRangeType;
 use RDF\JobDefinitionFormatBundle\Type\DateTimeRangeList;
@@ -36,11 +37,11 @@ class DateTimeRangeListTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testDateTimeRangeListConvertsToXmlValue()
     {
-        $start = new \DateTime('1999-05-31T18:20:00+0000');
-        $end = new \DateTime('1999-05-31T18:20:00+0000');
+        $start = new DateTime('1999-05-31T18:20:00+0000');
+        $end = new DateTime('1999-05-31T18:20:00+0000');
         $range = new DateTimeRange($start, $end);
-        $start2 = new \DateTime('2001-05-31T18:20:00+0000');
-        $end2 = new \DateTime('2002-05-31T18:20:00+0000');
+        $start2 = new DateTime('2001-05-31T18:20:00+0000');
+        $end2 = new DateTime('2002-05-31T18:20:00+0000');
         $range2 = new DateTimeRange($start2, $end2);
 
         $list = new DateTimeRangeList(array($range, $range2));

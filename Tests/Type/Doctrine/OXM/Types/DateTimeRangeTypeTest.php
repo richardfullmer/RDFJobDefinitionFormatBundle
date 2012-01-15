@@ -6,6 +6,7 @@
 
 namespace RDF\JobDefinitionFormatBundle\Tests\Doctrine\OXM\Types;
 
+use RDF\JobDefinitionFormatBundle\Type\DateTime;
 use RDF\JobDefinitionFormatBundle\Type\DateTimeRange;
 use RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types\DateTimeRangeType;
 use Doctrine\OXM\Types\Type;
@@ -34,9 +35,9 @@ class DateTimeRangeTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testDateTimeRangeConvertsToXmlValue()
     {
-        $start = new \DateTime('1999-05-31T18:20:00+0000');
-//        $end = new \DateTime('1999-05-31T18:20:00+0000');
-        $range = new DateTimeRange($start, null);
+        $start = new DateTime('1999-05-31T18:20:00+0000');
+        $end = new DateTime('INF');
+        $range = new DateTimeRange($start, $end);
         $convertedValue = $this->type->convertToXmlValue($range);
 
         $this->assertInternalType('string', $convertedValue);
