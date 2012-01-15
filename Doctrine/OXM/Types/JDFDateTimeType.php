@@ -17,7 +17,7 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace RDF\JobDefinitionFormatBundle\Types;
+namespace RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types;
 
 use Doctrine\OXM\Types\Type;
 use Doctrine\OXM\Types\ConversionException;

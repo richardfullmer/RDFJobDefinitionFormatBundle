@@ -36,4 +36,5 @@ spl_autoload_register(function($class) {
 });
 
 // load types for test
-\Doctrine\OXM\Types\Type::addType('jdfdatetime', "RDF\\JobDefinitionFormatBundle\\Types\\JDFDateTimeType");
+\Doctrine\OXM\Types\Type::addType('jdfdatetime', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\JDFDateTimeType");
+\Doctrine\OXM\Types\Type::addType('cmykcolor', "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\CMYKColorType");
