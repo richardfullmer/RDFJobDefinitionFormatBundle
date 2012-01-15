@@ -19,8 +19,9 @@
 
 namespace RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types;
 
-use Doctrine\OXM\Types\Type;
+use RDF\JobDefinitionFormatBundle\Type\DateTime;
 use Doctrine\OXM\Types\ConversionException;
+use Doctrine\OXM\Types\Type;
 
 /**
  * Type that maps an JDF DATETIME/TIMESTAMP to a PHP DateTime object.
@@ -36,21 +37,31 @@ class DateTimeType extends Type
         return 'JDF.DateTime';
     }
 
-    public function convertToXmlValue($range)
+    /**
+     * @param \RDF\JobDefinitionFormat\Type\DateTime $value
+     * @return string
+     */
+    public function convertToXmlValue($value)
     {
-        return ($range !== null) ? $range->format(static::FORMAT) : null;
+        return ($value !== null) ? $value->format(static::FORMAT) : null;
     }
 
+    /**
+     * @param $value
+     * @return \DateTime|null
+     * @throws \Doctrine\OXM\Types\ConversionException
+     */
     public function convertToPHPValue($value)
     {
         if ($value === null) {
             return null;
         }
 
-        $val = date_create($value);
+        $val = new DateTime($value);
         if (!$val) {
             throw ConversionException::conversionFailed($value, $this->getName());
         }
+
         return $val;
     }
 }
