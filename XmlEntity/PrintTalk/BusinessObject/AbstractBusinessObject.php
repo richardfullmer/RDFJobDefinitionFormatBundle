@@ -93,7 +93,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      * @var DateTime
      * @deprecated starting with PrintTalk 1.3, use PrintTalk/Timestamp
      *
-     * @OXM\XmlAttribute(type="jdfdatetime", name="RequestDate")
+     * @OXM\XmlAttribute(type="JDF.DateTime", name="RequestDate")
      */
     private $RequestDate;
 

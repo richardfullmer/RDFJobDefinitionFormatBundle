@@ -50,7 +50,7 @@ class PrintTalk
      *
      * @var \DateTime
      *
-     * @OXM\XmlAttribute(name="Timestamp", type="jdfdatetime")
+     * @OXM\XmlAttribute(name="Timestamp", type="JDF.DateTime")
      */
     private $Timestamp;
 

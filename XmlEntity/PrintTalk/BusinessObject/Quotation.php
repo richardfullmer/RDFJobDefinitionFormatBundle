@@ -55,7 +55,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @var \DateTime
      *
-     * @OXM\XmlAttribute(type="jdfdatetime", name="Expires");
+     * @OXM\XmlAttribute(type="JDF.DateTime", name="Expires");
      */
     private $Expires;
 

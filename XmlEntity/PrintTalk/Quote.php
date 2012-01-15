@@ -46,7 +46,7 @@ class Quote extends AbstractPT
      * @var DateTime
      * @deprecated
      *
-     * @OXM\XmlAttribute(type="jdfdatetime", name="Expires")
+     * @OXM\XmlAttribute(type="JDF.DateTime", name="Expires")
      */
     private $Expires;
 
