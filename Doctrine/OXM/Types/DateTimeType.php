@@ -36,9 +36,9 @@ class DateTimeType extends Type
         return 'JDF.DateTime';
     }
 
-    public function convertToXmlValue($value)
+    public function convertToXmlValue($list)
     {
-        return ($value !== null) ? $value->format(static::FORMAT) : null;
+        return ($list !== null) ? $list->format(static::FORMAT) : null;
     }
 
     public function convertToPHPValue($value)

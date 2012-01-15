@@ -57,6 +57,6 @@ class DateTimeRangeListTypeTest extends \PHPUnit_Framework_TestCase
         $list = $this->type->convertToPHPValue($input);
 
         $this->assertTrue($list instanceof DateTimeRangeList);
-        $this->assertCount(2, $list->getDateTimeRanges());
+        $this->assertCount(2, $list);
     }
 }

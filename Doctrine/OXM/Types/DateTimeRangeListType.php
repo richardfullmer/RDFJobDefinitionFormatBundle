@@ -37,21 +37,21 @@ class DateTimeRangeListType extends Type
         return 'JDF.DateTimeRangeList';
     }
 
-    public function convertToXmlValue($value)
+    public function convertToXmlValue($list)
     {
-        /** @var \RDF\JobDefinitionFormatBundle\Type\DateTimeRangeList $value */
-        if ($value === null) {
+        /** @var \RDF\JobDefinitionFormatBundle\Type\DateTimeRangeList $list */
+        if ($list === null) {
             return null;
         }
 
-        if (!$value instanceof DateTimeRangeList) {
-            throw ConversionException::conversionFailed($value, $this->getName());
+        if (!$list instanceof DateTimeRangeList) {
+            throw ConversionException::conversionFailed($list, $this->getName());
         }
 
         $dateTimeRangeType = Type::getType('JDF.DateTimeRange');
         $encodedValues = array();
 
-        foreach ($value->getDateTimeRanges() as $dateTimeRange) {
+        foreach ($list as $dateTimeRange) {
             $encodedValues[] = $dateTimeRangeType->convertToXmlValue($dateTimeRange);
         }
 
@@ -72,7 +72,7 @@ class DateTimeRangeListType extends Type
         $dateTimeRangeList = new DateTimeRangeList();
 
         foreach ($ranges[0] as $range) {
-            $dateTimeRangeList->addDateTimeRange($dateTimeRangeType->convertToPHPValue($range));
+            $dateTimeRangeList->add($dateTimeRangeType->convertToPHPValue($range));
         }
 
         return $dateTimeRangeList;

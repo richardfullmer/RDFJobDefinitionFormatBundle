@@ -21,37 +21,40 @@ namespace RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types;
 
 use Doctrine\OXM\Types\Type;
 use Doctrine\OXM\Types\ConversionException;
-use RDF\JobDefinitionFormatBundle\Type\CMYKColor;
+use RDF\JobDefinitionFormatBundle\Type\Double;
+use RDF\JobDefinitionFormatBundle\Type\DoubleList;
 
 /**
- * CMYKColor Attributes are primitive data types and are encoded as a string of
- * four numbers (as doubles) in the range of [0…1.0] separated by whitespace. A
- * value of 0.0 specifies no ink and a value of 1.0 specifies full ink. The sequence
- * of colors is “C M Y K”.
+ * A variable length list of numbers (as doubles)
+ *
+ * @author Richard Fullmer <richardfullmer@gmail.com>
  */
-class CMYKColorType extends Type
+class DoubleListType extends Type
 {
     public function getName()
     {
-        return 'JDF.CMYKColor';
+        return 'JDF.DoubleList';
     }
 
     public function convertToXmlValue($list)
     {
+        /** @var \RDF\JobDefinitionFormatBundle\Type\DoubleList $list */
         if ($list === null) {
             return null;
         }
 
-        if (!$list instanceof CMYKColor) {
+        if (!$list instanceof DoubleList) {
             throw ConversionException::conversionFailed($list, $this->getName());
         }
 
-        return implode(' ', array(
-            $list->getCyan(),
-            $list->getMagenta(),
-            $list->getYellow(),
-            $list->getBlack(),
-        ));
+        $doubleType = Type::getType('JDF.Double');
+        $encodedValues = array();
+
+        foreach ($list as $dateTimeRange) {
+            $encodedValues[] = $doubleType->convertToXmlValue($dateTimeRange);
+        }
+
+        return implode(' ', $encodedValues);
     }
 
     public function convertToPHPValue($value)
@@ -66,6 +69,13 @@ class CMYKColorType extends Type
             throw ConversionException::conversionFailed($value, $this->getName());
         }
 
-        return new CMYKColor($values[0], $values[1], $values[2], $values[3]);
+        $doubleType = Type::getType('JDF.Double');
+        $list = new DoubleList();
+
+        foreach ($values as $value) {
+            $list->add($doubleType->convertToPHPValue($value));
+        }
+
+        return $list;
     }
 }

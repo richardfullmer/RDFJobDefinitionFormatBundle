@@ -10,12 +10,11 @@ use Doctrine\Common\Collections\ArrayCollection;
 use RDF\JobDefinitionFormatBundle\Exception\InvalidArgumentException;
 
 /**
- * Used to describe a list of ranges of points in time.  More specifically, it describes
- * a list of time spans, which each have a relative start and end.
+ * Variable length list of doubles
  *
  * @author Richard Fullmer <richardfullmer@gmail.com>
  */
-class DateTimeRangeList extends ArrayCollection
+class DoubleList extends ArrayCollection
 {
     /**
      * @param array $elements
@@ -28,14 +27,14 @@ class DateTimeRangeList extends ArrayCollection
     }
 
     /**
-     * @param DateTimeRange $value
+     * @param Double $value
      * @return bool
      * @throws \RDF\JobDefinitionFormatBundle\Exception\InvalidArgumentException
      */
     public function add($value)
     {
-        if (!$value instanceof DateTimeRange) {
-            throw new InvalidArgumentException('DateTimeRangeList can only hold DateTimeRange objects');
+        if (!$value instanceof Double) {
+            throw new InvalidArgumentException('DoubleList can only hold Doubles');
         }
 
         return parent::add($value);
