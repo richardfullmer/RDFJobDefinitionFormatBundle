@@ -49,13 +49,13 @@ class DateTimeRangeListType extends Type
         }
 
         $dateTimeRangeType = Type::getType('JDF.DateTimeRange');
-        $encoded = '';
+        $encodedValues = array();
 
         foreach ($value->getDateTimeRanges() as $dateTimeRange) {
-            $encoded .= ' '.$dateTimeRangeType->convertToXmlValue($dateTimeRange);
+            $encodedValues[] = $dateTimeRangeType->convertToXmlValue($dateTimeRange);
         }
 
-        return $encoded;
+        return implode(' ', $encodedValues);
     }
 
     public function convertToPHPValue($value)
@@ -64,18 +64,14 @@ class DateTimeRangeListType extends Type
             return null;
         }
 
-        $list = explode(' ', $value);
-
-        if (!is_array($list)) {
+        if (!preg_match_all('/[a-zA-Z0-9~\-:\+]* ~ [a-zA-Z0-9~\-:\+]*/', $value, $ranges)) {
             throw ConversionException::conversionFailed($value, $this->getName());
         }
 
         $dateTimeRangeType = Type::getType('JDF.DateTimeRange');
         $dateTimeRangeList = new DateTimeRangeList();
 
-
-
-        foreach ($ranges as $range) {
+        foreach ($ranges[0] as $range) {
             $dateTimeRangeList->addDateTimeRange($dateTimeRangeType->convertToPHPValue($range));
         }
 

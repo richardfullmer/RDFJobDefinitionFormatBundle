@@ -44,8 +44,10 @@ class DateTimeRangeList
     public function setDateTimeRanges($ranges = null)
     {
         $this->dateTimeRanges = array();
-        foreach ($ranges as $range) {
-            $this->addDateTimeRange($range);
+        if (null !== $ranges) {
+            foreach ($ranges as $range) {
+                $this->addDateTimeRange($range);
+            }
         }
     }
 
