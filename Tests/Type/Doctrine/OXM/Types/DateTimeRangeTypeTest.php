@@ -35,22 +35,22 @@ class DateTimeRangeTypeTest extends \PHPUnit_Framework_TestCase
     public function testDateTimeRangeConvertsToXmlValue()
     {
         $start = new \DateTime('1999-05-31T18:20:00+0000');
-        $end = new \DateTime('1999-05-31T18:20:00+0000');
-        $range = new DateTimeRange($start, $end);
+//        $end = new \DateTime('1999-05-31T18:20:00+0000');
+        $range = new DateTimeRange($start, null);
         $convertedValue = $this->type->convertToXmlValue($range);
 
         $this->assertInternalType('string', $convertedValue);
-        $this->assertEquals('1999-05-31T18:20:00+0000 ~ 1999-05-31T18:20:00+0000', $convertedValue);
+        $this->assertEquals('1999-05-31T18:20:00+0000 ~ INF', $convertedValue);
     }
 
     public function testDateTimeRangeConvertsToPHPValue()
     {
-        $input = '1999-05-31T18:20:00Z ~ 1999-05-31T18:20:00Z';
+        $input = '1999-05-31T18:20:00Z ~ INF';
         /** @var \RDF\JobDefinitionFormatBundle\Type\DateTimeRange $range  */
         $range = $this->type->convertToPHPValue($input);
 
         $this->assertTrue($range instanceof DateTimeRange);
         $this->assertEquals('1999-05-31T18:20:00Z', $range->getStart()->format('Y-m-d\TG:i:s\Z'));
-        $this->assertEquals('1999-05-31T18:20:00Z', $range->getEnd()->format('Y-m-d\TG:i:s\Z'));
+        $this->assertFalse($range->hasEnd());
     }
 }
