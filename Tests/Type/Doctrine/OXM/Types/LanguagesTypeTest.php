@@ -13,7 +13,7 @@ use Doctrine\OXM\Types\Type;
  *
  * @author Richard Fullmer <richardfullmer@gmail.com>
  */
-class IDREFSTypeTest extends \PHPUnit_Framework_TestCase
+class LanguagesTypeTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var \RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types\IDREFSType
@@ -22,32 +22,32 @@ class IDREFSTypeTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->type = Type::getType('JDF.IDREFS');
+        $this->type = Type::getType('JDF.Languages');
     }
 
     public function testName()
     {
-        $this->assertEquals('JDF.IDREFS', $this->type->getName());
+        $this->assertEquals('JDF.Languages', $this->type->getName());
     }
 
     public function testIntegerListConvertsToXmlValue()
     {
-        $arg1 = 'R-12';
-        $arg2 = 'R-16';
+        $arg1 = 'de-CH';
+        $arg2 = 'de';
 
         $list = array($arg1, $arg2);
         $convertedValue = $this->type->convertToXmlValue($list);
 
         $this->assertInternalType('string', $convertedValue);
-        $this->assertEquals('R-12 R-16', $convertedValue);
+        $this->assertEquals('de-CH de', $convertedValue);
     }
 
     public function testDoubleListConvertsToPHPValue()
     {
-        $input = 'R-12 R-16';
+        $input = 'de-CH de';
         $list = $this->type->convertToPHPValue($input);
 
         $this->assertCount(2, $list);
-        $this->assertEquals(array('R-12', 'R-16'), $list);
+        $this->assertEquals(array('de-CH', 'de'), $list);
     }
 }
