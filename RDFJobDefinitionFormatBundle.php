@@ -43,6 +43,7 @@ class RDFJobDefinitionFormatBundle extends Bundle
             'JDF.NMTOKENS' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\NMTOKENSType",
             'JDF.PDFPath' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\PDFPathType",
             'JDF.Rectangle' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\RectangleType",
+            'JDF.RegExp' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\RegExpType",
         );
 
         foreach ($types as $name => $class) {
