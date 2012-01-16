@@ -47,6 +47,8 @@ class RDFJobDefinitionFormatBundle extends Bundle
             'JDF.Shape' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\ShapeType",
             'JDF.ShapeRange' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\ShapeRangeType",
             'JDF.sRGBColor' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\sRGBColorType",
+            'JDF.String' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\StringType",
+            'JDF.TransferFunction' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\TransferFunctionType",
         );
 
         foreach ($types as $name => $class) {
