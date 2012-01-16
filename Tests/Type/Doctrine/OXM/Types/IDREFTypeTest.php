@@ -6,6 +6,7 @@
 
 namespace RDF\JobDefinitionFormatBundle\Tests\Doctrine\OXM\Types;
 
+use RDF\JobDefinitionFormatBundle\Type\IDREF;
 use Doctrine\OXM\Types\Type;
 
 /**
@@ -30,21 +31,22 @@ class IDREFTypeTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('JDF.IDREF', $this->type->getName());
     }
 
-    public function testDateTimeConvertsToXmlValue()
+    public function testIDREFConvertsToXmlValue()
     {
-        $id = 'R-105';
+        $id = new IDREF('R-105');
         $convertedValue = $this->type->convertToXmlValue($id);
 
         $this->assertInternalType('string', $convertedValue);
         $this->assertEquals('R-105', $convertedValue);
     }
 
-    public function testDateTimeConvertsToPHPValue()
+    public function testIDREFConvertsToPHPValue()
     {
         $input = 'R-105';
         $id = $this->type->convertToPHPValue($input);
 
-        $this->assertEquals('R-105', $id);
+        $this->assertTrue($id instanceof IDREF);
+        $this->assertEquals('R-105', $id->getValue());
     }
 
 }

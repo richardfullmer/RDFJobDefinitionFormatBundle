@@ -6,6 +6,8 @@
 
 namespace RDF\JobDefinitionFormatBundle\Tests\Doctrine\OXM\Types;
 
+use RDF\JobDefinitionFormatBundle\Type\IDREF;
+use RDF\JobDefinitionFormatBundle\Type\IDREFS;
 use Doctrine\OXM\Types\Type;
 
 /**
@@ -30,24 +32,24 @@ class IDREFSTypeTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('JDF.IDREFS', $this->type->getName());
     }
 
-    public function testIntegerListConvertsToXmlValue()
+    public function testIDREFSConvertsToXmlValue()
     {
-        $arg1 = 'R-12';
-        $arg2 = 'R-16';
+        $arg1 = new IDREF('R-12');
+        $arg2 = new IDREF('R-16');
 
-        $list = array($arg1, $arg2);
+        $list = new IDREFS(array($arg1, $arg2));
         $convertedValue = $this->type->convertToXmlValue($list);
 
         $this->assertInternalType('string', $convertedValue);
         $this->assertEquals('R-12 R-16', $convertedValue);
     }
 
-    public function testDoubleListConvertsToPHPValue()
+    public function testIDREFSConvertsToPHPValue()
     {
         $input = 'R-12 R-16';
         $list = $this->type->convertToPHPValue($input);
 
+        $this->assertTrue($list instanceof IDREFS);
         $this->assertCount(2, $list);
-        $this->assertEquals(array('R-12', 'R-16'), $list);
     }
 }

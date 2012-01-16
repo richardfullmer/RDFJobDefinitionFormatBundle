@@ -21,8 +21,8 @@ namespace RDF\JobDefinitionFormatBundle\Doctrine\OXM\Types;
 
 use Doctrine\OXM\Types\Type;
 use Doctrine\OXM\Types\ConversionException;
-use RDF\JobDefinitionFormatBundle\Type\Double;
-use RDF\JobDefinitionFormatBundle\Type\DoubleList;
+use RDF\JobDefinitionFormatBundle\Type\IDREF;
+use RDF\JobDefinitionFormatBundle\Type\IDREFS;
 
 /**
  * IDREFS Represents the IDREFS Attribute from [XMLSchema]. More specifically, this is
@@ -44,6 +44,10 @@ class IDREFSType extends Type
         /** @var array $items */
         if ($items === null) {
             return null;
+        }
+
+        if (!$items instanceof IDREFS) {
+            throw ConversionException::conversionFailed($items, $this->getName());
         }
 
         $idrefType = Type::getType('JDF.IDREF');
@@ -69,10 +73,10 @@ class IDREFSType extends Type
         }
 
         $idrefType = Type::getType('JDF.IDREF');
-        $list = array();
+        $list = new IDREFS();
 
         foreach ($values as $value) {
-            $list[] = $idrefType->convertToPHPValue($value);
+            $list->add($idrefType->convertToPHPValue($value));
         }
 
         return $list;

@@ -5,6 +5,8 @@
  */
 
 namespace RDF\JobDefinitionFormatBundle\Tests\Doctrine\OXM\Types;
+
+use RDF\JobDefinitionFormatBundle\Type\ID;
 use Doctrine\OXM\Types\Type;
 
 /**
@@ -29,21 +31,22 @@ class IDTypeTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('JDF.ID', $this->type->getName());
     }
 
-    public function testDateTimeConvertsToXmlValue()
+    public function testIDConvertsToXmlValue()
     {
-        $id = 'R-105';
+        $id = new ID('R-105');
         $convertedValue = $this->type->convertToXmlValue($id);
 
         $this->assertInternalType('string', $convertedValue);
         $this->assertEquals('R-105', $convertedValue);
     }
 
-    public function testDateTimeConvertsToPHPValue()
+    public function testIDConvertsToPHPValue()
     {
         $input = 'R-105';
         $id = $this->type->convertToPHPValue($input);
 
-        $this->assertEquals('R-105', $id);
+        $this->assertTrue($id instanceof ID);
+        $this->assertEquals('R-105', $id->getValue());
     }
 
 }
