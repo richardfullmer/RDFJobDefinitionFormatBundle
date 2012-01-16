@@ -35,6 +35,7 @@ class RDFJobDefinitionFormatBundle extends Bundle
             'JDF.Integer' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\IntegerType",
             'JDF.IntegerList' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\IntegerListType",
             'JDF.IntegerRange' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\IntegerRangeType",
+            'JDF.LabColor' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\LabColorType",
         );
 
         foreach ($types as $name => $class) {
