@@ -49,6 +49,11 @@ class RDFJobDefinitionFormatBundle extends Bundle
             'JDF.sRGBColor' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\sRGBColorType",
             'JDF.String' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\StringType",
             'JDF.TransferFunction' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\TransferFunctionType",
+            'JDF.URI' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\URIType",
+            'JDF.URL' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\URLType",
+            'JDF.XPath' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\XPathType",
+            'JDF.XYPair' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\XYPairType",
+            'JDF.XYPairRange' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\XYPairRangeType",
         );
 
         foreach ($types as $name => $class) {
