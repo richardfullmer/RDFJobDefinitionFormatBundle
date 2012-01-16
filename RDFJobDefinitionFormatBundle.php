@@ -40,6 +40,7 @@ class RDFJobDefinitionFormatBundle extends Bundle
             'JDF.Languages' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\LanguagesType",
             'JDF.Matrix' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\MatrixType",
             'JDF.NMTOKEN' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\NMTOKENType",
+            'JDF.NMTOKENS' => "RDF\\JobDefinitionFormatBundle\\Doctrine\\OXM\\Types\\NMTOKENSType",
         );
 
         foreach ($types as $name => $class) {
