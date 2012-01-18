@@ -42,7 +42,7 @@ class DateTime extends \DateTime
     {
         return self::NEGATIVE_INFINITY == $this->infinity;
     }
-    
+
     public function add($interval)
     {
         if (null !== $this->infinity) {
