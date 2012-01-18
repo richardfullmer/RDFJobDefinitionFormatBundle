@@ -35,7 +35,7 @@ class Credential
      *
      * @OXM\XmlAttribute(type="string")
      */
-    private $domain;
+    protected $domain;
 
     /**
      * The text in the Element states who the <tt>Credential</tt> represents.
@@ -47,28 +47,28 @@ class Credential
      *
      * @OXM\XmlAttribute(type="string")
      */
-    private $type;
+    protected $type;
 
     /**
      * @var string
      *
      * @OXM\XmlText(name="Identity", type="string")
      */
-    private $Identity;
+    protected $Identity;
 
     /**
      * @var string
      *
      * @OXM\XmlText(name="SharedSecret", type="string")
      */
-    private $SharedSecret;
+    protected $SharedSecret;
 
     /**
      * @var string
      *
      * @OXM\XmlText(name="CredentialMac", type="string")
      */
-    private $CredentialMac;
+    protected $CredentialMac;
 
     /**
      * @param  $CredentialMac

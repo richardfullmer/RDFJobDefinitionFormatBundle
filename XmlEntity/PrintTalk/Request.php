@@ -30,7 +30,7 @@ class Request
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\BusinessObject\AbstractBusinessObject")
      */
-    private $BusinessObject;
+    protected $BusinessObject;
 
     /**
      * @param BusinessObject\AbstractBusinessObject $BusinessObject

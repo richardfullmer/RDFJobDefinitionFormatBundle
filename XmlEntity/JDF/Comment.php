@@ -10,7 +10,7 @@ use Doctrine\OXM\Mapping as OXM;
 /**
  * @OXM\XmlEntity(xml="Comment")
  */
-class Comment
+class Comment extends Element
 {
 
 }

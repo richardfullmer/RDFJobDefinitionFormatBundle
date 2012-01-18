@@ -40,7 +40,7 @@ class Header
      *
      * @OXM\XmlElement(name="From", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\From")
      */
-    private $From;
+    protected $From;
 
     /**
      * Identifies the destination of the cXML request
@@ -49,7 +49,7 @@ class Header
      *
      * @OXM\XmlElement(name="To", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\To")
      */
-    private $To;
+    protected $To;
 
     /**
      * Allows the receiving party to identify and authenticate the party that
@@ -62,7 +62,7 @@ class Header
      *
      * @OXM\XmlElement(name="Sender", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Sender")
      */
-    private $Sender;
+    protected $Sender;
 
 
     public function setFrom(From $From)

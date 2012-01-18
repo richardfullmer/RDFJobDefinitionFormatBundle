@@ -65,7 +65,7 @@ class RFQ extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="Currency")
      */
-    private $Currency;
+    protected $Currency;
 
     /**
      * If "false", the prices in the responding Quotation MUST be
@@ -81,7 +81,7 @@ class RFQ extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="boolean", name="Estimate")
      */
-    private $Estimate;
+    protected $Estimate;
 
     /**
      * Date/time when this RFQ becomes Invalid
@@ -90,7 +90,7 @@ class RFQ extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="JDF.DateTime", name="Expires");
      */
-    private $Expires;
+    protected $Expires;
 
     /**
      * White-space-separated BusinessID values that refer to
@@ -101,7 +101,7 @@ class RFQ extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="ReorderID");
      */
-    private $ReorderID;
+    protected $ReorderID;
 
     /**
      * RFQ/BusinessID of the RFQ that this PrintTalk Document
@@ -112,7 +112,7 @@ class RFQ extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="ReplaceID");
      */
-    private $ReplaceID;
+    protected $ReplaceID;
 
     /**
      * Description of the Product or service that is to be produced or
@@ -126,7 +126,7 @@ class RFQ extends AbstractBusinessObject
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF", name="JDF", prefix="jdf");
      */
-    private $JDF;
+    protected $JDF;
 
     /**
      * @param  $Currency

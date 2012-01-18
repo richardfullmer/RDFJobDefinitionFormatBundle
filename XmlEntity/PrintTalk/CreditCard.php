@@ -29,7 +29,7 @@ class CreditCard extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="Authorization")
      */
-    private $Authorization;
+    protected $Authorization;
 
     /**
      * Expiration date of the Authorization.
@@ -38,7 +38,7 @@ class CreditCard extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="AuthorizationExpires")
      */
-    private $AuthorizationExpires;
+    protected $AuthorizationExpires;
 
     /**
      * Expiration date of the credit card.
@@ -47,7 +47,7 @@ class CreditCard extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="Expires")
      */
-    private $Expires;
+    protected $Expires;
 
     /**
      * Credit card number. The format is specified without blanks or
@@ -57,7 +57,7 @@ class CreditCard extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="Number")
      */
-    private $Number;
+    protected $Number;
 
     /**
      * Credit card brand.
@@ -66,7 +66,7 @@ class CreditCard extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="Type")
      */
-    private $Type;
+    protected $Type;
 
     /**
      * @param  $Authorization

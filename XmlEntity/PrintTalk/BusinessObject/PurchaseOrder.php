@@ -32,7 +32,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="Currency")
      */
-    private $Currency;
+    protected $Currency;
 
     /**
      * Date/time when this PurchaseOrder becomes Invalid
@@ -41,7 +41,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="JDF.DateTime", name="Expires");
      */
-    private $Expires;
+    protected $Expires;
 
     /**
      * This PurchaseOrder PO selects the quote specified by
@@ -52,7 +52,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="QuoteID")
      */
-    private $QuoteID;
+    protected $QuoteID;
 
     /**
      * White-space-separated unique BusinessID values that refer to
@@ -64,7 +64,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="ReorderID");
      */
-    private $ReorderID;
+    protected $ReorderID;
 
     /**
      * PurchaseOrder/BusinessID of the PurchaseOrder that this
@@ -75,7 +75,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="ReplaceID");
      */
-    private $ReplaceID;
+    protected $ReplaceID;
 
     /**
      * If ReturnJDF = "true" the Print Provider MUST send to the Print
@@ -87,7 +87,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="boolean", name="ReturnJDF")
      */
-    private $ReturnJDF;
+    protected $ReturnJDF;
 
     /**
      * Description of the Print Product. The JDF Element MAY be used to
@@ -99,7 +99,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF", required=true)
      */
-    private $JDF;
+    protected $JDF;
 
     /**
      * Starting with Printtalk 1.3, the pricing information is in PrintTalk
@@ -113,7 +113,7 @@ class PurchaseOrder extends AbstractBusinessObject
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Pricing")
      */
-    private $Pricing;
+    protected $Pricing;
 
     /**
      * @param  $Currency

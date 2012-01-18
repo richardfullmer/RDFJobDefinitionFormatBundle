@@ -29,7 +29,7 @@ class From
      *
      * @OXM\XmlElement(name="Credential", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Credential", collection=true)
      */
-    private $Credentials;
+    protected $Credentials;
 
     /**
      * @param \RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Credential[] $Credentials

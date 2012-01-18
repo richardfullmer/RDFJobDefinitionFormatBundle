@@ -29,7 +29,7 @@ class Pricing extends AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Payment")
      */
-    private $Payment;
+    protected $Payment;
 
     /**
      * Each Price Element represents the price for a single Item. The sum
@@ -40,7 +40,7 @@ class Pricing extends AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Price", name="Price", required=true, collection=true)
      */
-    private $Prices;
+    protected $Prices;
 
     /**
      * @param RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Payment $Payment

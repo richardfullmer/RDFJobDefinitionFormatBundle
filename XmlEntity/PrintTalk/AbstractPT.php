@@ -30,7 +30,7 @@ abstract class AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="DescriptiveName")
      */
-    private $DescriptiveName;
+    protected $DescriptiveName;
 
     /**
      * Comment text that contains from form information about the Element.
@@ -40,7 +40,7 @@ abstract class AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Comment", prefix="jdf", name="Comment")
      */
-    private $jdfComment;
+    protected $jdfComment;
 
     /**
      * Optional parameters for a Business Transaction. GeneralID
@@ -57,7 +57,7 @@ abstract class AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\GeneralID", prefix="jdf", name="GeneralID")
      */
-    private $jdfGeneralID;
+    protected $jdfGeneralID;
 
     public function setDescriptiveName($DescriptiveName)
     {
@@ -97,7 +97,7 @@ class GeneralID
      *
      * @OXM\XmlAttribute(type="string", name="IDUsage")
      */
-    private $IDUsage;
+    protected $IDUsage;
 
     /**
      * The value of the identifier that IDUsage specifies.
@@ -106,5 +106,5 @@ class GeneralID
      *
      * @OXM\XmlAttribute(type="string", name="IDUsage")
      */
-    private $IDValue;
+    protected $IDValue;
 }

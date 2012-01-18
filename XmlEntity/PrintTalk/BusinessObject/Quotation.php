@@ -36,7 +36,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="Currency")
      */
-    private $Currency;
+    protected $Currency;
 
     /**
      * For each Quote[not(exists(Estimate))] Element inside this
@@ -48,7 +48,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="boolean", name="Estimate")
      */
-    private $Estimate;
+    protected $Estimate;
 
     /**
      * Date/time when this RFQ becomes Invalid
@@ -57,7 +57,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="JDF.DateTime", name="Expires");
      */
-    private $Expires;
+    protected $Expires;
 
     /**
      * White-space-separated unique BusinessID values that refer to
@@ -69,7 +69,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="ReorderID");
      */
-    private $ReorderID;
+    protected $ReorderID;
 
     /**
      * Quotation/BusinessID of the Quotation that this
@@ -79,7 +79,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @OXM\XmlAttribute(type="string", name="ReplaceID");
      */
-    private $ReplaceID;
+    protected $ReplaceID;
 
     /**
      * Each Quote Element MUST describe a complete distinct Print
@@ -90,7 +90,7 @@ class Quotation extends AbstractBusinessObject
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Quote", required="true", collection=true)
      */
-    private $Quote;
+    protected $Quote;
 
 
     public function setCurrency($Currency)

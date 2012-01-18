@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <PrintTalk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xmlns="http://www.printtalk.org/schema" xmlns:jdf="http://www.CIP4.org/JDFSchema_1_1"
            xsi:schemaLocation="http://www.printtalk.org/schema PrintTalk_1_1.xsd" version="1.1"
            payloadID="107778"
            timestamp="2007-07-1T22:39-08:00">
-    <!--version: This is the PrintTalk version; borrowed from cXML. -->
-    <!--payloadID: This is transport unique ID of the message; borrowed from cXML. -->
     <Header>
         <From>
             <Credential domain="DNS">
@@ -39,15 +37,10 @@
              RequestDate="2007-07-1T10:00-08:00"
              BusinessID="RFQ_A3317" Currency="USD" Estimate="true"
              Expires="2007-08-25T1700-0800">
-            <!--Buyer requests a non-binding price. Just an estimate. -->
-            <jdf:JDF DescriptiveName="224 Page hard and soft cover book" ID="JDF000-Root"
+            <JDF DescriptiveName="224 Page hard and soft cover book" ID="JDF000-Root"
                      JobID="BuyerJob001" Type="Product" Status="Waiting" Version="1.1"
                      xmlns="http://www.CIP4.org/JDFSchema_1_1">
-                <!--JobID: sender's reference to a Job/project. -->
-                <!--Version: JDF version. -->
                 <AuditPool>
-                    <!--Not required by PrintTalk, may be used at the discretion of the document
-                   creator. -->
                     <Created Author="PrintTalk" TimeStamp="2007-07-1T11:20-08:00"/>
                 </AuditPool>
                 <ResourcePool>
@@ -61,7 +54,6 @@
                     </LayoutIntent>
                     <DeliveryIntent ID="Delivery001" Class="Intent" Status="Available">
                         <DropIntent>
-                            <!--Date by which the Product is to be delivered-->
                             <Required DataType="TimeSpan" Preferred="2007-09-30T09:30-8:00"/>
                             <ContactRef rRef="Contact02"/>
                             <DropItemIntent Amount="7500">
@@ -102,8 +94,6 @@
                 </ResourceLinkPool>
                 <JDF DescriptiveName="224 Page hard case bound book with a 4/0 dust jacket"
                      ID="JDF001(HardBook)" Type="Product" Status="Waiting">
-                    <!--For RFQ, whatever JDF "Product" Elements necessary to specify components to be
-                   delivered. -->
                     <ResourcePool>
                         <Component ID="Item001(HardBook)" Class="Quantity" Status="Unavailable"
                                    DescriptiveName="224 Page hard case bound book with a 4/0 dust jacket"
@@ -236,7 +226,7 @@
                         <LayoutIntentLink rRef="Size001(Finished)" Usage="Input"/>
                     </ResourceLinkPool>
                 </JDF>
-            </jdf:JDF>
+            </JDF>
         </RFQ>
     </Request>
 </PrintTalk>

@@ -33,14 +33,14 @@ class Quote extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="Currency")
      */
-    private $Currency;
+    protected $Currency;
 
     /**
      * @var boolean
      *
      * @OXM\XmlAttribute(type="boolean", name="Estimate")
      */
-    private $Estimate;
+    protected $Estimate;
 
     /**
      * @var DateTime
@@ -48,14 +48,14 @@ class Quote extends AbstractPT
      *
      * @OXM\XmlAttribute(type="JDF.DateTime", name="Expires")
      */
-    private $Expires;
+    protected $Expires;
 
     /**
      * @var string
      *
      * @OXM\XmlAttribute(type="string", name="QuoteID", required="true")
      */
-    private $QuoteID;
+    protected $QuoteID;
 
     /**
      * @var string
@@ -63,35 +63,35 @@ class Quote extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="ReorderID")
      */
-    private $ReorderID;
+    protected $ReorderID;
 
     /**
      * @var string
      *
      * @OXM\XmlAttribute(type="string", name="ReplaceID")
      */
-    private $ReplaceID;
+    protected $ReplaceID;
 
     /**
      * @var boolean
      *
      * @OXM\XmlAttribute(type="boolean", name="ReturnJDF")
      */
-    private $ReturnJDF;
+    protected $ReturnJDF;
 
     /**
      * @var RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF", required="true", prefix="jdf")
      */
-    private $JDF;
+    protected $JDF;
 
     /**
      * @var RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Pricing
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Pricing", required="true")
      */
-    private $Pricing;
+    protected $Pricing;
 
     /**
      * @param  $Currency

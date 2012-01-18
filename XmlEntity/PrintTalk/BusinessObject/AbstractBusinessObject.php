@@ -32,7 +32,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="AgentID")
      */
-    private $AgentID;
+    protected $AgentID;
 
     /**
      * The display name of the user that is identified by AgentID.
@@ -41,7 +41,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="AgentDisplayName")
      */
-    private $AgentDisplayName;
+    protected $AgentDisplayName;
 
     /**
      * AuxID is used as a reference to the Print Buyer's internal system
@@ -56,7 +56,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="AuxID")
      */
-    private $AuxID;
+    protected $AuxID;
 
     /**
      * The unique identifier for this Business Object
@@ -65,7 +65,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="BusinessID")
      */
-    private $BusinessID;
+    protected $BusinessID;
 
     /**
      * The value of this BusinessRefID MUST be the same as the
@@ -85,7 +85,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="BusinessRefID")
      */
-    private $BusinessRefID;
+    protected $BusinessRefID;
 
     /**
      * Date/time when this Business Object was sent.
@@ -95,7 +95,7 @@ abstract class AbstractBusinessObject extends AbstractPT
      *
      * @OXM\XmlAttribute(type="JDF.DateTime", name="RequestDate")
      */
-    private $RequestDate;
+    protected $RequestDate;
 
     /**
      * @param  $AgentDisplayName

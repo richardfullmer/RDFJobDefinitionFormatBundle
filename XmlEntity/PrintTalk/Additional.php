@@ -30,7 +30,7 @@ class Additional extends AbstractPT
      *
      * @OXM\XmlAttribute(type="float", name="Amount")
      */
-    private $Amount;
+    protected $Amount;
 
     /**
      * The price of the additional number of Items as specified in
@@ -40,7 +40,7 @@ class Additional extends AbstractPT
      *
      * @OXM\XmlAttribute(type="float", name="Price")
      */
-    private $Price;
+    protected $Price;
 
     /**
      * @param  $Amount

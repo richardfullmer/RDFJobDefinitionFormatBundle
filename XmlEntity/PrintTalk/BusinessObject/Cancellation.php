@@ -40,7 +40,7 @@ class Cancellation extends AbstractBusinessObject
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Contact")
      */
-    private $Contact;
+    protected $Contact;
 
     /**
      * @param Contact $Contact

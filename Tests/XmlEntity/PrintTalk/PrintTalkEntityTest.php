@@ -39,6 +39,8 @@ class PrintTalkEntityTest extends MarshallerTestCase
      */
     public function testMarshalling($source)
     {
+        $this->markTestSkipped("JDF OXM Entities not fully loaded yet");
+
         $source = realpath($source);
         $marshaller = self::getMarshaller();
 
@@ -48,7 +50,7 @@ class PrintTalkEntityTest extends MarshallerTestCase
 
         $unmarshalled = $marshaller->marshalToString($pt);
 
-        $this->assertNotEmpty($unmarshalled);
+        $this->assertXmlStringEqualsXmlFile($source, $unmarshalled);
     }
 
     public function exampleProvider()

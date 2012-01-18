@@ -14,7 +14,7 @@ use Doctrine\OXM\Mapping as OXM;
 /**
  * @OXM\XmlRootEntity(xml="JDF")
  */
-class JDF
+class JDF extends Element
 {
     const ACTIVATION_INACTIVE = 'Inactive';
     const ACTIVATION_INFORMATIVE = 'Informative';
@@ -158,7 +158,7 @@ class JDF
      *
      * @OXM\XmlAttribute(type="JDF.Boolean", name="Template")
      */
-    protected $Template = false;
+    protected $Template;
 
     /**
      * @var string
@@ -211,12 +211,28 @@ class JDF
 
     protected $CustomerInfo;
 
+    /**
+     * @var JDF[]
+     *
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF", name="JDF", collection=true)
+     */
     protected $JDFList;
 
     protected $NodeInfo;
 
+
+    /**
+     * @var Pool\ResourceLinkPool[]
+     *
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Pool\ResourceLinkPool", name="ResourceLinkPool")
+     */
     protected $ResourceLinkPool;
 
+    /**
+     * @var Pool\ResourcePool[]
+     *
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Pool\ResourcePool", name="ResourcePool")
+     */
     protected $ResourcePool;
 
     protected $StatusPool;

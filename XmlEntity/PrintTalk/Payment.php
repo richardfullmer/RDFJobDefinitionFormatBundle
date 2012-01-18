@@ -29,7 +29,7 @@ class Payment extends AbstractPT
      *
      * @OXM\XmlText(name="PayTerm", type="string")
      */
-    private $PayTerm;
+    protected $PayTerm;
 
     /**
      * Specifies credit card information.
@@ -41,7 +41,7 @@ class Payment extends AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\CreditCard", name="CreditCard")
      */
-    private $CreditCard;
+    protected $CreditCard;
 
     /**
      * Additional details about payment MAY be specified using GeneralID
@@ -51,7 +51,7 @@ class Payment extends AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\GeneralID", collection=true)
      */
-    private $GeneralIDs;
+    protected $GeneralIDs;
 
     /**
      * @param CreditCard $CreditCard

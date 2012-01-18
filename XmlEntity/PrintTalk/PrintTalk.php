@@ -31,7 +31,7 @@ class PrintTalk
      *
      * @OXM\XmlAttribute(type="string")
      */
-    private $version = "1.3";
+    protected $version = "1.3";
 
     /**
      * From cXML:  A unique number with respect to space and time, used for logging
@@ -42,7 +42,7 @@ class PrintTalk
      *
      * @OXM\XmlAttribute(name="payloadID", type="string")
      */
-    private $payloadID;
+    protected $payloadID;
 
     /**
      * From cXML:  The date and time the message was sent, in ISO8601 format.
@@ -52,7 +52,7 @@ class PrintTalk
      *
      * @OXM\XmlAttribute(name="Timestamp", type="JDF.DateTime")
      */
-    private $Timestamp;
+    protected $Timestamp;
 
     /**
      * The Header defined in cXML. {@see \RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Header}
@@ -61,7 +61,7 @@ class PrintTalk
      *
      * @OXM\XmlElement(name="Header", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Header")
      */
-    private $Header;
+    protected $Header;
 
     /**
      * The Request defined in cXML and as futhre specified in this document
@@ -70,7 +70,7 @@ class PrintTalk
      *
      * @OXM\XmlElement(name="Request", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Request")
      */
-    private $Request;
+    protected $Request;
 
     /**
      * @param Header $Header

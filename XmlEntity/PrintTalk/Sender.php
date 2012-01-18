@@ -29,7 +29,7 @@ class Sender
      *
      * @OXM\XmlElement(name="Credential", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Credential", collection=true)
      */
-    private $Credentials;
+    protected $Credentials;
 
     /**
      * The UserAgent is unique to the Sender element and identifies the software
@@ -39,7 +39,7 @@ class Sender
      *
      * @OXM\XmlText(type="string", name="UserAgent")
      */
-    private $UserAgent;
+    protected $UserAgent;
 
     /**
      * @param \RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Credential[] $Credentials

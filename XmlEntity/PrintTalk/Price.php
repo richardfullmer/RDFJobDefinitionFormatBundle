@@ -32,7 +32,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="float", name="Amount")
      */
-    private $Amount;
+    protected $Amount;
 
     /**
      * The description of the Item. Note that DescriptiveName is
@@ -43,7 +43,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="DescriptiveName", required=true)
      */
-    private $DescriptiveName;
+    protected $DescriptiveName;
 
     /**
      * List of jdf:JDF/ProductID of Items within the associated
@@ -55,7 +55,7 @@ class Price extends AbstractPT
      * 
      * @OXM\XmlAttribute(type="string", name="ItemRefs")
      */
-    private $ItemRefs;
+    protected $ItemRefs;
 
     /**
      * The unique identifier for this (line) Item.
@@ -68,7 +68,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="LineID")
      */
-    private $LineID;
+    protected $LineID;
 
     /**
      * Line items that this line item relates to, for instance taxes or
@@ -81,7 +81,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="LineIDRefs")
      */
-    private $LineIDRefs;
+    protected $LineIDRefs;
 
     /**
      * The price of the entire amount as specified by Amount of the
@@ -95,7 +95,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="float", name="Price")
      */
-    private $Price;
+    protected $Price;
 
     /**
      * MAY be specified if exists(UnitPrice), otherwise MUST
@@ -106,7 +106,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="string", name="Unit")
      */
-    private $Unit;
+    protected $Unit;
 
     /**
      * Price for one unit of the Item, i.e. the Price of the Item if
@@ -118,7 +118,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlAttribute(type="float", name="UnitPrice")
      */
-    private $UnitPrice;
+    protected $UnitPrice;
 
     /**
      * Price for orders in excess of the nominal delivery quantity
@@ -128,7 +128,7 @@ class Price extends AbstractPT
      *
      * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Additional", name="Additional", collection=true)
      */
-    private $Additionals;
+    protected $Additionals;
 
     /**
      * @param array $Additionals
