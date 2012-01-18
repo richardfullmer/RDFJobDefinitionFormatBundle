@@ -28,6 +28,8 @@ class JMFEntityTest extends MarshallerTestCase
      */
     public function testMarshalling($source)
     {
+        $this->markTestSkipped("JMF OXM definitions not yet completed");
+
         $source = realpath($source);
         $marshaller = self::getMarshaller();
 
@@ -45,7 +47,7 @@ class JMFEntityTest extends MarshallerTestCase
         return array(
 //            array(__DIR__ . "/examples/known_messages_query.jmf"),
 //            array(__DIR__ . "/examples/known_messages_response.jmf"),
-//            array(__DIR__ . "/examples/status_query.jmf"),
+            array(__DIR__ . "/examples/status_query.jmf"),
 //            array(__DIR__ . "/examples/status_response.jmf"),
 //            array(__DIR__ . "/examples/status_signal_1.jmf"),
 //            array(__DIR__ . "/examples/status_signal_2.jmf"),
