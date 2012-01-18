@@ -1,5 +1,5 @@
 {
-    "name":"richardfullmer/job-definition-format-bundle",
+    "name":"rdf/job-definition-format-bundle",
     "type":"symfony-bundle",
     "description":"This Bundle provides various tools to read, write and modify JDF",
     "keywords":["jdf"],

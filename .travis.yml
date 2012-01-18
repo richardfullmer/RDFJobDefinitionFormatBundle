@@ -10,6 +10,6 @@ before_script:
 
 script: phpunit --coverage-text
 
-#notifications:
-#  email:
-#    - richardfullmer@gmail.com
+notifications:
+  email:
+    - richardfullmer@gmail.com
