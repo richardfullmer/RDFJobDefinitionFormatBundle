@@ -7,8 +7,6 @@
 namespace RDF\JobDefinitionFormatBundle\Type;
 
 use RDF\JobDefinitionFormatBundle\Exception\UnsupportedOperationException;
-use DateTimeZone;
-use DateInterval;
 
 /**
  * Represents a specific instant of time. It MUST be a Coordinated Universal
@@ -26,7 +24,7 @@ class DateTime extends \DateTime
 
     protected $infinity;
 
-    public function __construct($time = 'now', DateTimeZone $timezone = null)
+    public function __construct($time = 'now', \DateTimeZone $timezone = null)
     {
         if (self::POSITIVE_INFINITY == $time || self::NEGATIVE_INFINITY == $time) {
             $this->infinity = $time;
@@ -44,8 +42,8 @@ class DateTime extends \DateTime
     {
         return self::NEGATIVE_INFINITY == $this->infinity;
     }
-
-    public function add(DateInterval $interval)
+    
+    public function add($interval)
     {
         if (null !== $this->infinity) {
             throw new UnsupportedOperationException("Cannot add dates with infinity");
@@ -54,7 +52,8 @@ class DateTime extends \DateTime
         return parent::add($interval);
     }
 
-    public function sub(DateInterval $interval)
+
+    public function sub($interval)
     {
         if (null !== $this->infinity) {
             throw new UnsupportedOperationException("Cannot subtract dates with infinity");
