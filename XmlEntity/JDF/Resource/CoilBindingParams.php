@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="CoilBindingParams")
  */
-class CoilBindingParams
+class CoilBindingParams extends Resource
 {
 
 }

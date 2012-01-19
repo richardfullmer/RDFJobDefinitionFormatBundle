@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="EmbossingParams")
  */
-class EmbossingParams
+class EmbossingParams extends Resource
 {
 
 }

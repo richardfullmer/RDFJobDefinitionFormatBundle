@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PreflightProfile")
  */
-class PreflightProfile
+class PreflightProfile extends Resource
 {
 
 }

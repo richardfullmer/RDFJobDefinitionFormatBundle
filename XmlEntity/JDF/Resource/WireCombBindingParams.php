@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="WireCombBindingParams")
  */
-class WireCombBindingParams
+class WireCombBindingParams extends Resource
 {
 
 }

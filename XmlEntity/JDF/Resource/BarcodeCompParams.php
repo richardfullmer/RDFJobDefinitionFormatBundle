@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="BarcodeCompParams")
  */
-class BarcodeCompParams
+class BarcodeCompParams extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RingBindingParams")
  */
-class RingBindingParams
+class RingBindingParams extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ColorSpaceConversionOp")
  */
-class ColorSpaceConversionOp
+class ColorSpaceConversionOp extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PreflightInventory")
  */
-class PreflightInventory
+class PreflightInventory extends Resource
 {
 
 }

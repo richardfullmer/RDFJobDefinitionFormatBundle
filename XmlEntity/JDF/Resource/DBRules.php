@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="DBRules")
  */
-class DBRules
+class DBRules extends Resource
 {
 
 }

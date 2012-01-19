@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="BinderySignature")
  */
-class BinderySignature
+class BinderySignature extends Resource
 {
 
 }

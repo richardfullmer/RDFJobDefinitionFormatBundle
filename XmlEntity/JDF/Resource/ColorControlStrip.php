@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ColorControlStrip")
  */
-class ColorControlStrip
+class ColorControlStrip extends Resource
 {
 
 }

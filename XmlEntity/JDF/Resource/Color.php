@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Color")
  */
-class Color
+class Color extends Resource
 {
 
 }

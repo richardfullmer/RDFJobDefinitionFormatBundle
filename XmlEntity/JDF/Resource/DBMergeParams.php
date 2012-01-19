@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="DBMergeParams")
  */
-class DBMergeParams
+class DBMergeParams extends Resource
 {
 
 }

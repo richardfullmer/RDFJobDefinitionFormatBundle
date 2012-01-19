@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="LayoutElementProductionParams")
  */
-class LayoutElementProductionParams
+class LayoutElementProductionParams extends Resource
 {
 
 }

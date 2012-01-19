@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="AutomatedOverPrintParams")
  */
-class AutomatedOverPrintParams
+class AutomatedOverPrintParams extends Resource
 {
 
 }

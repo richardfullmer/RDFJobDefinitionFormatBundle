@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RasterReadingParams")
  */
-class RasterReadingParams
+class RasterReadingParams extends Resource
 {
 
 }

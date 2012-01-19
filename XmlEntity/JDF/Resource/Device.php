@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Device")
  */
-class Device
+class Device extends Resource
 {
 
 }

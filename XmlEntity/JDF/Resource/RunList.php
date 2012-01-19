@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RunList")
  */
-class RunList
+class RunList extends Resource
 {
 
 }

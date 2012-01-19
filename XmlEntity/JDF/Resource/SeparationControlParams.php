@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="SeparationControlParams")
  */
-class SeparationControlParams
+class SeparationControlParams extends Resource
 {
 
 }

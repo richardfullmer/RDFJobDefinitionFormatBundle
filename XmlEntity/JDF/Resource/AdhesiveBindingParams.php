@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="AdhesiveBindingParams")
  */
-class AdhesiveBindingParams
+class AdhesiveBindingParams extends Resource
 {
 
 }

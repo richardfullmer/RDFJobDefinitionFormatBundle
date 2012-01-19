@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Address")
  */
-class Address
+class Address extends Resource
 {
 
 }

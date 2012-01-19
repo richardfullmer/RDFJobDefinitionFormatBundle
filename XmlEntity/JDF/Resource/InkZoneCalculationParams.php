@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="InkZoneCalculationParams")
  */
-class InkZoneCalculationParams
+class InkZoneCalculationParams extends Resource
 {
 
 }

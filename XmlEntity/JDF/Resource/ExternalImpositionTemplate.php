@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ExternalImpositionTemplate")
  */
-class ExternalImpositionTemplate
+class ExternalImpositionTemplate extends Resource
 {
 
 }

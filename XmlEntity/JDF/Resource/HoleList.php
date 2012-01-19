@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="HoleList")
  */
-class HoleList
+class HoleList extends Resource
 {
 
 }

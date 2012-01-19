@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="UsageCounter")
  */
-class UsageCounter
+class UsageCounter extends Resource
 {
 
 }

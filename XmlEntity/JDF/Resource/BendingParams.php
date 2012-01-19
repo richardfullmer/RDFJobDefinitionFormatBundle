@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="BendingParams")
  */
-class BendingParams
+class BendingParams extends Resource
 {
 
 }

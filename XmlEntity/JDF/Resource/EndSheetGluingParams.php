@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="EndSheetGluingParams")
  */
-class EndSheetGluingParams
+class EndSheetGluingParams extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="JobField")
  */
-class JobField
+class JobField extends Resource
 {
 
 }

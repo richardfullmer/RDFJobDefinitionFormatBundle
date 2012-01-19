@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PerforatingParams")
  */
-class PerforatingParams
+class PerforatingParams extends Resource
 {
 
 }

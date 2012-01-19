@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="VarnishingParams")
  */
-class VarnishingParams
+class VarnishingParams extends Resource
 {
 
 }

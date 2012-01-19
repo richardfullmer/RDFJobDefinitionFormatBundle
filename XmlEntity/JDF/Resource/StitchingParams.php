@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="StitchingParams")
  */
-class StitchingParams
+class StitchingParams extends Resource
 {
 
 }

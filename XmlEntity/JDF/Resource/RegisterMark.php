@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RegisterMark")
  */
-class RegisterMark
+class RegisterMark extends Resource
 {
 
 }

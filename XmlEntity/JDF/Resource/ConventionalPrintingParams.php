@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ConventionalPrintingParams")
  */
-class ConventionalPrintingParams
+class ConventionalPrintingParams extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PageList")
  */
-class PageList
+class PageList extends Resource
 {
 
 }

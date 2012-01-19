@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="DieLayoutProductionParams")
  */
-class DieLayoutProductionParams
+class DieLayoutProductionParams extends Resource
 {
 
 }

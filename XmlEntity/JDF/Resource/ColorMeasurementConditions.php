@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ColorMeasurementConditions")
  */
-class ColorMeasurementConditions
+class ColorMeasurementConditions extends Resource
 {
 
 }

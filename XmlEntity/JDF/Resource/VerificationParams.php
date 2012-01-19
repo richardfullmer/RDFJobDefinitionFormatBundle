@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="VerificationParams")
  */
-class VerificationParams
+class VerificationParams extends Resource
 {
 
 }

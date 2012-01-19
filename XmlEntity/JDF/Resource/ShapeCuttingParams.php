@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ShapeCuttingParams")
  */
-class ShapeCuttingParams
+class ShapeCuttingParams extends Resource
 {
 
 }

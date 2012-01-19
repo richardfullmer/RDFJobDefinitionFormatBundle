@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="CostCenter")
  */
-class CostCenter
+class CostCenter extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="DensityMeasuringField")
  */
-class DensityMeasuringField
+class DensityMeasuringField extends Resource
 {
 
 }

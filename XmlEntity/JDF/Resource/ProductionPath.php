@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ProductionPath")
  */
-class ProductionPath
+class ProductionPath extends Resource
 {
 
 }

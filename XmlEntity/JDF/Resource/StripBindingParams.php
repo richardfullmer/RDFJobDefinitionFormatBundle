@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="StripBindingParams")
  */
-class StripBindingParams
+class StripBindingParams extends Resource
 {
 
 }

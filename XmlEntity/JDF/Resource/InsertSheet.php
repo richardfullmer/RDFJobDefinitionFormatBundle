@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="InsertSheet")
  */
-class InsertSheet
+class InsertSheet extends Resource
 {
 
 }

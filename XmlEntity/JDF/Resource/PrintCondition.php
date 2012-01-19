@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PrintCondition")
  */
-class PrintCondition
+class PrintCondition extends Resource
 {
 
 }

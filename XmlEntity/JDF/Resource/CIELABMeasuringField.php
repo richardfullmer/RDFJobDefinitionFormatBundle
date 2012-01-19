@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="CIELABMeasuringField")
  */
-class CIELABMeasuringField
+class CIELABMeasuringField extends Resource
 {
 
 }

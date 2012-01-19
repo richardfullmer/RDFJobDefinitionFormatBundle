@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ThreadSewingParams")
  */
-class ThreadSewingParams
+class ThreadSewingParams extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PlasticCombBindingParams")
  */
-class PlasticCombBindingParams
+class PlasticCombBindingParams extends Resource
 {
 
 }

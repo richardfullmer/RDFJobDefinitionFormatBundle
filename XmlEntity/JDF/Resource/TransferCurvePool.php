@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="TransferCurvePool")
  */
-class TransferCurvePool
+class TransferCurvePool extends Resource
 {
 
 }

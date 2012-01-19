@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ShapeDef")
  */
-class ShapeDef
+class ShapeDef extends Resource
 {
 
 }

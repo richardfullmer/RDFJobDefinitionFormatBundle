@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="InkZoneProfile")
  */
-class InkZoneProfile
+class InkZoneProfile extends Resource
 {
 
 }

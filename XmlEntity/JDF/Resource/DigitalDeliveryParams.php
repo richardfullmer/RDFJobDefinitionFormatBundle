@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="DigitalDeliveryParams")
  */
-class DigitalDeliveryParams
+class DigitalDeliveryParams extends Resource
 {
 
 }

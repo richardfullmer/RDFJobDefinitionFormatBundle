@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="LongitudinalRibbonOperationParams")
  */
-class LongitudinalRibbonOperationParams
+class LongitudinalRibbonOperationParams extends Resource
 {
 
 }

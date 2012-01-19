@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="GatheringParams")
  */
-class GatheringParams
+class GatheringParams extends Resource
 {
 
 }

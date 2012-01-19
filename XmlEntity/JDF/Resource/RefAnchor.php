@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RefAnchor")
  */
-class RefAnchor
+class RefAnchor extends Resource
 {
 
 }

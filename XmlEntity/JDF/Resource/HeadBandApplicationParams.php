@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="HeadBandApplicationParams")
  */
-class HeadBandApplicationParams
+class HeadBandApplicationParams extends Resource
 {
 
 }

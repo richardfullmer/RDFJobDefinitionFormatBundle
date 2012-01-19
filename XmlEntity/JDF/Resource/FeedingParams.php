@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="FeedingParams")
  */
-class FeedingParams
+class FeedingParams extends Resource
 {
 
 }

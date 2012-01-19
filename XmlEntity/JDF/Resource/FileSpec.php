@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="FileSpec")
  */
-class FileSpec
+class FileSpec extends Resource
 {
 
 }

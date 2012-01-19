@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PDLResourceAlias")
  */
-class PDLResourceAlias
+class PDLResourceAlias extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="GlueLine")
  */
-class GlueLine
+class GlueLine extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="SpinePreparationParams")
  */
-class SpinePreparationParams
+class SpinePreparationParams extends Resource
 {
 
 }

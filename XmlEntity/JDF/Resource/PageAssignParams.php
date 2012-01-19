@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PageAssignParams")
  */
-class PageAssignParams
+class PageAssignParams extends Resource
 {
 
 }

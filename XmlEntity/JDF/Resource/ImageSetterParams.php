@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ImageSetterParams")
  */
-class ImageSetterParams
+class ImageSetterParams extends Resource
 {
 
 }

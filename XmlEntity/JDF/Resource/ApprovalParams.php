@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ApprovalParams")
  */
-class ApprovalParams
+class ApprovalParams extends Resource
 {
 
 }

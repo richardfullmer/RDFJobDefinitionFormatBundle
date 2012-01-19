@@ -16,7 +16,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ResourcePool")
  */
-class ResourcePool
+class ResourcePool extends Element
 {
     /**
      * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Resource[]

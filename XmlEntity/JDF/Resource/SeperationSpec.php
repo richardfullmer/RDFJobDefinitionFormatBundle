@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="SeperationSpec")
  */
-class SeperationSpec
+class SeperationSpec extends Resource
 {
 
 }

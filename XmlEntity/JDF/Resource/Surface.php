@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Surface")
  */
-class Surface
+class Surface extends Resource
 {
 
 }

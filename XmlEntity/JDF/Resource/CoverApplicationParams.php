@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="CoverApplicationParams")
  */
-class CoverApplicationParams
+class CoverApplicationParams extends Resource
 {
 
 }

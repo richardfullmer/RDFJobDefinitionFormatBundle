@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="LaminatingParams")
  */
-class LaminatingParams
+class LaminatingParams extends Resource
 {
 
 }

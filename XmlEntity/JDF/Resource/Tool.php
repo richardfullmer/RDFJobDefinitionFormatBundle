@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Tool")
  */
-class Tool
+class Tool extends Resource
 {
 
 }

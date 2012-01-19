@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PreflightReportRulePool")
  */
-class PreflightReportRulePool
+class PreflightReportRulePool extends Resource
 {
 
 }

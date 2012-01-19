@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="QualityControlResult")
  */
-class QualityControlResult
+class QualityControlResult extends Resource
 {
 
 }

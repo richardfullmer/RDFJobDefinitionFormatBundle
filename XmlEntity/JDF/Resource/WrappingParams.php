@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="WrappingParams")
  */
-class WrappingParams
+class WrappingParams extends Resource
 {
 
 }

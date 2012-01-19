@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="TransferFunctionControl")
  */
-class TransferFunctionControl
+class TransferFunctionControl extends Resource
 {
 
 }

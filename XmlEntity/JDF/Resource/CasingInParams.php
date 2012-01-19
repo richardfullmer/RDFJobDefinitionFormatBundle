@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="CasingInParams")
  */
-class CasingInParams
+class CasingInParams extends Resource
 {
 
 }

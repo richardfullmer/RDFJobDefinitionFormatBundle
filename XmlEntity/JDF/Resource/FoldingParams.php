@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="FoldingParams")
  */
-class FoldingParams
+class FoldingParams extends Resource
 {
 
 }

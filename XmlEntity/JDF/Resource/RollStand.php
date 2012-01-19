@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RollStand")
  */
-class RollStand
+class RollStand extends Resource
 {
 
 }

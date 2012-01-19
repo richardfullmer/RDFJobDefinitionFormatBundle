@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PlateCopyParams")
  */
-class PlateCopyParams
+class PlateCopyParams extends Resource
 {
 
 }

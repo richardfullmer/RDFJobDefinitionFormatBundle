@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="JacketingParams")
  */
-class JacketingParams
+class JacketingParams extends Resource
 {
 
 }

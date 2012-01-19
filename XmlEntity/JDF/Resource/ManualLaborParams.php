@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ManualLaborParams")
  */
-class ManualLaborParams
+class ManualLaborParams extends Resource
 {
 
 }

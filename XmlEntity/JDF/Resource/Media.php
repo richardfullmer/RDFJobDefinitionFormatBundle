@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Media")
  */
-class Media
+class Media extends Resource
 {
 
 }

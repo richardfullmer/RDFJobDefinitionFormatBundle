@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ScavengerArea")
  */
-class ScavengerArea
+class ScavengerArea extends Resource
 {
 
 }

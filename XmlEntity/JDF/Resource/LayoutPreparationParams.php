@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="LayoutPreparationParams")
  */
-class LayoutPreparationParams
+class LayoutPreparationParams extends Resource
 {
 
 }

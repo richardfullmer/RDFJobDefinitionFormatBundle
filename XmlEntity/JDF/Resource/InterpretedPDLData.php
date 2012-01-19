@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="InterpretedPDLData")
  */
-class InterpretedPDLData
+class InterpretedPDLData extends Resource
 {
 
 }

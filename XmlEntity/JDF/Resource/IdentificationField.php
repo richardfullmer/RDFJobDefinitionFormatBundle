@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="IdentificationField")
  */
-class IdentificationField
+class IdentificationField extends Resource
 {
 
 }

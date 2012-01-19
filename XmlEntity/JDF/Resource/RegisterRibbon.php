@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="RegisterRibbon")
  */
-class RegisterRibbon
+class RegisterRibbon extends Resource
 {
 
 }

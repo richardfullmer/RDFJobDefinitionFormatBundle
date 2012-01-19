@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PalletizingParams")
  */
-class PalletizingParams
+class PalletizingParams extends Resource
 {
 
 }

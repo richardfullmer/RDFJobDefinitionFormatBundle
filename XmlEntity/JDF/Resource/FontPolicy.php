@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="FontPolicy")
  */
-class FontPolicy
+class FontPolicy extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="TrappingDetails")
  */
-class TrappingDetails
+class TrappingDetails extends Resource
 {
 
 }

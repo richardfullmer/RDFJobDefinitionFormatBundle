@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PackingParams")
  */
-class PackingParams
+class PackingParams extends Resource
 {
 
 }

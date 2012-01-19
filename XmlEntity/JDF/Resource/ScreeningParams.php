@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ScreeningParams")
  */
-class ScreeningParams
+class ScreeningParams extends Resource
 {
 
 }

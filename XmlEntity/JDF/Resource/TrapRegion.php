@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="TrapRegion")
  */
-class TrapRegion
+class TrapRegion extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PDFToPSConversionParams")
  */
-class PDFToPSConversionParams
+class PDFToPSConversionParams extends Resource
 {
 
 }

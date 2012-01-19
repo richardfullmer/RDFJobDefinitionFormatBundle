@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ComChannel")
  */
-class ComChannel
+class ComChannel extends Resource
 {
 
 }

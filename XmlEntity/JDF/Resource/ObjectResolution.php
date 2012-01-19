@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ObjectResolution")
  */
-class ObjectResolution
+class ObjectResolution extends Resource
 {
 
 }

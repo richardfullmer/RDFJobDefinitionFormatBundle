@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="CutMark")
  */
-class CutMark
+class CutMark extends Resource
 {
 
 }

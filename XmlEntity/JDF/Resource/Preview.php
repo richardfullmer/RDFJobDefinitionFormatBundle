@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Preview")
  */
-class Preview
+class Preview extends Resource
 {
 
 }

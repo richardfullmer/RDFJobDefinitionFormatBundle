@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ImageCompressionParams")
  */
-class ImageCompressionParams
+class ImageCompressionParams extends Resource
 {
 
 }

@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="SideSewingParams")
  */
-class SideSewingParams
+class SideSewingParams extends Resource
 {
 
 }

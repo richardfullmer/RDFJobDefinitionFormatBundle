@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="DBSchema")
  */
-class DBSchema
+class DBSchema extends Resource
 {
 
 }

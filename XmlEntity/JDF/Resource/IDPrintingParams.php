@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="IDPrintingParams")
  */
-class IDPrintingParams
+class IDPrintingParams extends Resource
 {
 
 }

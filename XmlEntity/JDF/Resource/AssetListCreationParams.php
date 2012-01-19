@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="AssetListCreationParams")
  */
-class AssetListCreationParams
+class AssetListCreationParams extends Resource
 {
 
 }
