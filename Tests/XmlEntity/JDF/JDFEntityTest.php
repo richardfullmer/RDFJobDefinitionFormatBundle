@@ -28,7 +28,7 @@ class JDFEntityTest extends MarshallerTestCase
      */
     public function testMarshalling($source)
     {
-//        $this->markTestSkipped("JDF OXM definitions not yet completed");
+        $this->markTestSkipped("JDF OXM definitions not yet completed");
 
         $source = realpath($source);
         $marshaller = self::getMarshaller();

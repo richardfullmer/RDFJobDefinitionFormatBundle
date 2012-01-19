@@ -19,9 +19,9 @@ use Doctrine\OXM\Mapping as OXM;
 class ResourceLinkPool extends Element
 {
     /**
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Resource[]
+     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\ResourceLink[]
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Link\ResourceLink", collection=true)
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\ResourceLink", collection=true)
      */
     protected $ResourceLinkList;
 }
