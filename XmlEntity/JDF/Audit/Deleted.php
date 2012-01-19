@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Deleted")
  */
-class Deleted
+class Deleted extends Audit
 {
 
 }

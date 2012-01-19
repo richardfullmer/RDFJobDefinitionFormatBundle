@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="ProcessRun")
  */
-class ProcessRun
+class ProcessRun extends Audit
 {
 
 }

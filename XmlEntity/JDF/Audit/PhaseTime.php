@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PhaseTime")
  */
-class PhaseTime
+class PhaseTime extends Audit
 {
 
 }

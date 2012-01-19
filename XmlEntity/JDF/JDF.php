@@ -207,6 +207,11 @@ class JDF extends Element
      */
     protected $AncestorPool;
 
+    /**
+     * @var Pool\AuditPool[]
+     *
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Pool\AuditPool", name="AuditPool")
+     */
     protected $AuditPool;
 
     protected $CustomerInfo;

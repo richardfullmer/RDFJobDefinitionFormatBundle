@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Merged")
  */
-class Merged
+class Merged extends Audit
 {
 
 }

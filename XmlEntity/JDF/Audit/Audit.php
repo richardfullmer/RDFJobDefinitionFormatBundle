@@ -8,11 +8,11 @@ namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit;
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit\AbstractAudit
+ * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit\Audit
  *
- * @OXM\XmlEntity(xml="AbstractAudit")
+ * @OXM\XmlMappedSuperclass
  */
-class AbstractAudit
+abstract class Audit
 {
 
 }

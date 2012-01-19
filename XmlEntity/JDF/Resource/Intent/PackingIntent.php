@@ -5,6 +5,7 @@
 
 namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent;
 
+use RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Resource;
 use Doctrine\OXM\Mapping as OXM;
 
 /**
@@ -12,7 +13,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="PackingIntent")
  */
-class PackingIntent
+class PackingIntent extends Resource
 {
 
 }

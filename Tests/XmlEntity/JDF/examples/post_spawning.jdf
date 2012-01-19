@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <JDF ID="SpawnTest" Type="Product" xmlns="http://www.CIP4.org/JDFSchema_1_1"
      Status="Waiting" Version="1.4" JobPartID="Part1">
     <AuditPool>

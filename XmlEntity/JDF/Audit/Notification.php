@@ -12,7 +12,7 @@ use Doctrine\OXM\Mapping as OXM;
  *
  * @OXM\XmlEntity(xml="Notification")
  */
-class Notification
+class Notification extends Audit
 {
 
 }
