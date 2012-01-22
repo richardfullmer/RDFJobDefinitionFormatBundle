@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\ShapeDefProductionParams
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\ShapeDefProductionParams
  *
  * @OXM\XmlEntity(xml="ShapeDefProductionParams")
  */

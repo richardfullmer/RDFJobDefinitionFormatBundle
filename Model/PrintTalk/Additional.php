@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Model\PrintTalk;
 
 use Doctrine\OXM\Mapping as OXM;
 

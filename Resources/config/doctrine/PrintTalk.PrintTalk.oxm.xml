@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/oxm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/oxm/doctrine-mapping http://www.doctrine-project.org/schemas/oxm/doctrine-mapping.xsd">
+
+    <entity class="RDF\JobDefinitionFormatBundle\Model\PrintTalk\PrintTalk" xml-name="PrintTalk" root="true">
+
+        <namespaces>
+            <namespace url="http://www.printtalk.org/schema_13" />
+        </namespaces>
+
+        <field name="version" type="string" node="ATTRIBUTE" />
+
+        <field name="payloadID" type="string" node="ATTRIBUTE" />
+
+        <field name="Timestamp" type="JDF.DateTime" node="ATTRIBUTE" xml-name="Timestamp" />
+
+        <field name="Header" type="RDF\JobDefinitionFormatBundle\Model\PrintTalk\Header" node="ELEMENT" xml-name="Header" />
+
+        <field name="Request" type="RDF\JobDefinitionFormatBundle\Model\PrintTalk\Request" node="ELEMENT" xml-name="Request" />
+
+    </entity>
+
+</doctrine-mapping>

@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Bundle
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Bundle
  *
  * @OXM\XmlEntity(xml="Bundle")
  */

@@ -17,10 +17,10 @@
  * <http://www.opensoftdev.com>.
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests\XmlEntity\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Tests\Model\PrintTalk;
 
-use RDF\JobDefinitionFormatBundle\Tests\XmlEntity\MarshallerTestCase;
-use RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\PrintTalk;
+use RDF\JobDefinitionFormatBundle\Tests\Model\MarshallerTestCase;
+use RDF\JobDefinitionFormatBundle\Model\PrintTalk\PrintTalk;
  
 class PrintTalkEntityTest extends MarshallerTestCase
 {

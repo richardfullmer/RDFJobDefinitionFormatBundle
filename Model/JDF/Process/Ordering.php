@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\Ordering
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\Ordering
  *
  * @OXM\XmlEntity(xml="Ordering")
  */

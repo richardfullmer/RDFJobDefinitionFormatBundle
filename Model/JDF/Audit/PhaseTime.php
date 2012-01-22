@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Audit;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Audit\PhaseTime
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Audit\PhaseTime
  *
  * @OXM\XmlEntity(xml="PhaseTime")
  */

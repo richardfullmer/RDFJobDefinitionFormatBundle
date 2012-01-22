@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\RefAnchor
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\RefAnchor
  *
  * @OXM\XmlEntity(xml="RefAnchorLink")
  */

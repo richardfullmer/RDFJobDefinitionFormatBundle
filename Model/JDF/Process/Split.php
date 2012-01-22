@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\Split
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\Split
  *
  * @OXM\XmlEntity(xml="Split")
  */

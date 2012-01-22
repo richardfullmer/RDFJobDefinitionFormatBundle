@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Model\PrintTalk;
 
 use Doctrine\OXM\Mapping as OXM;
 
@@ -55,20 +55,20 @@ class PrintTalk
     protected $Timestamp;
 
     /**
-     * The Header defined in cXML. {@see \RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Header}
+     * The Header defined in cXML. {@see \RDF\JobDefinitionFormatBundle\Model\PrintTalk\Header}
      *
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Header
+     * @var \RDF\JobDefinitionFormatBundle\Model\PrintTalk\Header
      *
-     * @OXM\XmlElement(name="Header", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Header")
+     * @OXM\XmlElement(name="Header", type="RDF\JobDefinitionFormatBundle\Model\PrintTalk\Header")
      */
     protected $Header;
 
     /**
      * The Request defined in cXML and as futhre specified in this document
      *
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Request
+     * @var \RDF\JobDefinitionFormatBundle\Model\PrintTalk\Request
      *
-     * @OXM\XmlElement(name="Request", type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Request")
+     * @OXM\XmlElement(name="Request", type="RDF\JobDefinitionFormatBundle\Model\PrintTalk\Request")
      */
     protected $Request;
 

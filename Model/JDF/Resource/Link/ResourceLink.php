@@ -4,9 +4,9 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
-use RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Element;
+use RDF\JobDefinitionFormatBundle\Model\JDF\Element;
 use Doctrine\OXM\Mapping as OXM;
 
 /**

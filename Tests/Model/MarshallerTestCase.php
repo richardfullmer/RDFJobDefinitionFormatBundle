@@ -4,11 +4,11 @@
  * 
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests\XmlEntity;
+namespace RDF\JobDefinitionFormatBundle\Tests\Model;
 
 
 use Doctrine\OXM\Configuration;
-use Doctrine\OXM\Mapping\Driver\AnnotationDriver;
+use Doctrine\Bundle\OXMBundle\Mapping\Driver\XmlDriver;
 use Doctrine\OXM\Mapping\ClassMetadataFactory;
 use Doctrine\OXM\Marshaller\XmlMarshaller;
 
@@ -31,7 +31,12 @@ class MarshallerTestCase extends \PHPUnit_Framework_TestCase
     {
         if (!self::$marshaller) {
             $config = new Configuration();
-            $config->setMetadataDriverImpl(AnnotationDriver::create(__DIR__."/../../XmlEntity"));
+            $driver = new XmlDriver(__DIR__."/../../Resources/config/doctrine");
+            $driver->setNamespacePrefixes(array(
+                __DIR__."/../../Resources/config/doctrine" => "RDF\\JobDefinitionFormatBundle\\Model"
+            ));
+//            print_r($driver->getAllClassNames()); die();
+            $config->setMetadataDriverImpl($driver);
             $config->setMetadataCacheImpl(new \Doctrine\Common\Cache\ArrayCache());
 
             $metadataFactory = new ClassMetadataFactory($config);

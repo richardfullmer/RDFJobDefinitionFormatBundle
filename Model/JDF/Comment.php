@@ -3,7 +3,7 @@
  *
  */
  
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF;
 
 use Doctrine\OXM\Mapping as OXM;
 

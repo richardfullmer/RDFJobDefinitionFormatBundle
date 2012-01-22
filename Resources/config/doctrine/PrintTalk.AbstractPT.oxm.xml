@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/oxm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://doctrine-project.org/schemas/oxm/doctrine-mapping http://www.doctrine-project.org/schemas/oxm/doctrine-mapping.xsd">
+
+    <mapped-superclass class="RDF\JobDefinitionFormatBundle\Model\PrintTalk\AbstractPT" xml-name="AbstractPT">
+
+        <field name="DescriptiveName" type="string" node="ATTRIBUTE" xml-name="DescriptiveName" />
+
+        <field name="jdfComment" type="RDF\JobDefinitionFormatBundle\Model\JDF\Comment" node="ELEMENT" xml-name="jdfComment" />
+
+        <field name="jdfGeneralID" type="RDF\JobDefinitionFormatBundle\Model\JDF\GeneralID" node="ELEMENT" xml-name="jdfGeneralID" />
+
+    </mapped-superclass>
+
+</doctrine-mapping>

@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\Wrapping
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress\Wrapping
  *
  * @OXM\XmlEntity(xml="Wrapping")
  */

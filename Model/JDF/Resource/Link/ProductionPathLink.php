@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\ProductionPath
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\ProductionPath
  *
  * @OXM\XmlEntity(xml="ProductionPathLink")
  */

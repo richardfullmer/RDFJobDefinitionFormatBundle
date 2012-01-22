@@ -4,7 +4,7 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF;
 
 use Doctrine\OXM\Mapping as OXM;
 
@@ -66,23 +66,23 @@ abstract class Element
     protected $SettingsPolicy;
 
     /**
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Comment[]
+     * @var \RDF\JobDefinitionFormatBundle\Model\JDF\Comment[]
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Comment", name="Comment", collection=true)
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\JDF\Comment", name="Comment", collection=true)
      */
     protected $CommentList;
 
     /**
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\GeneralID[]
+     * @var \RDF\JobDefinitionFormatBundle\Model\JDF\GeneralID[]
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\GeneralID", name="GeneralID", collection=true)
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\JDF\GeneralID", name="GeneralID", collection=true)
      */
     protected $GeneralIDList;
 
     /**
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Preview[]
+     * @var \RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Preview[]
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Preview", name="Preview", collection=true)
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Preview", name="Preview", collection=true)
      */
     protected $PreviewList;
 }

@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\CylinderLayoutPreparation
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress\CylinderLayoutPreparation
  *
  * @OXM\XmlEntity(xml="CylinderLayoutPreparation")
  */

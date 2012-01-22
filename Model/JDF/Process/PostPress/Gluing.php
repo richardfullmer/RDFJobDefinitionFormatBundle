@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\Gluing
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress\Gluing
  *
  * @OXM\XmlEntity(xml="Gluing")
  */

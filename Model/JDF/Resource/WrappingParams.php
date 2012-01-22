@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\WrappingParams
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\WrappingParams
  *
  * @OXM\XmlEntity(xml="WrappingParams")
  */

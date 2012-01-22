@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\SaddleStitchingParams
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\SaddleStitchingParams
  *
  * @OXM\XmlEntity(xml="SaddleStitchingParams")
  */

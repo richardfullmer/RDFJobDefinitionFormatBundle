@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\AdhesiveBinding
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress\AdhesiveBinding
  *
  * @OXM\XmlEntity(xml="AdhesiveBinding")
  */

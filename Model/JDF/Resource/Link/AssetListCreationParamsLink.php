@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\AssetListCreationParams
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\AssetListCreationParams
  *
  * @OXM\XmlEntity(xml="AssetListCreationParamsLink")
  */

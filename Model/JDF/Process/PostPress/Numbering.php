@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PostPress\Numbering
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PostPress\Numbering
  *
  * @OXM\XmlEntity(xml="Numbering")
  */

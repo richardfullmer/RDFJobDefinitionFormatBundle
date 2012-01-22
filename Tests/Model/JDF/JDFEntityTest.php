@@ -17,9 +17,9 @@
  * <http://www.opensoftdev.com>.
  */
 
-namespace RDF\JobDefinitionFormatBundle\Tests\XmlEntity\JDF;
+namespace RDF\JobDefinitionFormatBundle\Tests\Model\JDF;
 
-use RDF\JobDefinitionFormatBundle\Tests\XmlEntity\MarshallerTestCase;
+use RDF\JobDefinitionFormatBundle\Tests\Model\MarshallerTestCase;
  
 class JDFEntityTest extends MarshallerTestCase
 {

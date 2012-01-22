@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\Press;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\Press;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\Press\Varnishing
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\Press\Varnishing
  *
  * @OXM\XmlEntity(xml="Varnishing")
  */

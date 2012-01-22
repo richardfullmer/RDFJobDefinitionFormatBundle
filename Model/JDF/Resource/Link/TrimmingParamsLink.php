@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\TrimmingParams
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\TrimmingParams
  *
  * @OXM\XmlEntity(xml="TrimmingParamsLink")
  */

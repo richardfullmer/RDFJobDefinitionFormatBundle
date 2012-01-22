@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\ContactCopying
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress\ContactCopying
  *
  * @OXM\XmlEntity(xml="ContactCopying")
  */

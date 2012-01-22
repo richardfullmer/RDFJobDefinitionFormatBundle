@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\ComponentLink
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\ComponentLink
  *
  * @OXM\XmlEntity(xml="ComponentLink")
  */

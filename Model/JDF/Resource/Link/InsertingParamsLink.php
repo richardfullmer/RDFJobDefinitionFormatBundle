@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\InsertingParams
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\InsertingParams
  *
  * @OXM\XmlEntity(xml="InsertingParamsLink")
  */

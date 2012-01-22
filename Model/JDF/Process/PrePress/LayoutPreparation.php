@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\LayoutPreparation
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress\LayoutPreparation
  *
  * @OXM\XmlEntity(xml="LayoutPreparation")
  */

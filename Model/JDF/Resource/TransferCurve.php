@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\TransferCurve
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\TransferCurve
  *
  * @OXM\XmlEntity(xml="TransferCurve")
  */

@@ -3,12 +3,12 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress;
 
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Process\PrePress\SoftProofing
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Process\PrePress\SoftProofing
  *
  * @OXM\XmlEntity(xml="SoftProofing")
  */

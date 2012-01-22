@@ -3,13 +3,13 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Intent;
 
-use RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Resource;
+use RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Resource;
 use Doctrine\OXM\Mapping as OXM;
 
 /**
- * RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Intent\EmbossingIntent
+ * RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Intent\EmbossingIntent
  *
  * @OXM\XmlEntity(xml="EmbossingIntent")
  */

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Model\PrintTalk;
 
 use Doctrine\OXM\Mapping as OXM;
-use RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF;
+use RDF\JobDefinitionFormatBundle\Model\JDF\JDF;
 
 /**
  * Quote
@@ -80,16 +80,16 @@ class Quote extends AbstractPT
     protected $ReturnJDF;
 
     /**
-     * @var RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF
+     * @var RDF\JobDefinitionFormatBundle\Model\JDF\JDF
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF", required="true", prefix="jdf")
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\JDF\JDF", required="true", prefix="jdf")
      */
     protected $JDF;
 
     /**
-     * @var RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Pricing
+     * @var RDF\JobDefinitionFormatBundle\Model\PrintTalk\Pricing
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Pricing", required="true")
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\PrintTalk\Pricing", required="true")
      */
     protected $Pricing;
 
@@ -154,7 +154,7 @@ class Quote extends AbstractPT
     }
 
     /**
-     * @return RDF\JobDefinitionFormatBundle\XmlEntity\JDF\JDF
+     * @return RDF\JobDefinitionFormatBundle\Model\JDF\JDF
      */
     public function getJDF()
     {
@@ -171,7 +171,7 @@ class Quote extends AbstractPT
     }
 
     /**
-     * @return RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Pricing
+     * @return RDF\JobDefinitionFormatBundle\Model\PrintTalk\Pricing
      */
     public function getPricing()
     {

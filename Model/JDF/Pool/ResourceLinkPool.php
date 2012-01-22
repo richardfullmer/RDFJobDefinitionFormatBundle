@@ -4,9 +4,9 @@
  *
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Pool;
+namespace RDF\JobDefinitionFormatBundle\Model\JDF\Pool;
 
-use RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Element;
+use RDF\JobDefinitionFormatBundle\Model\JDF\Element;
 use Doctrine\OXM\Mapping as OXM;
 
 /**
@@ -19,9 +19,9 @@ use Doctrine\OXM\Mapping as OXM;
 class ResourceLinkPool extends Element
 {
     /**
-     * @var \RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\ResourceLink[]
+     * @var \RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\ResourceLink[]
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Link\ResourceLink", collection=true)
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Link\ResourceLink", collection=true)
      */
     protected $ResourceLinkList;
 }

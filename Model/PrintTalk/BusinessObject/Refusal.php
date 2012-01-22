@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\BusinessObject;
+namespace RDF\JobDefinitionFormatBundle\Model\PrintTalk\BusinessObject;
 
 use Doctrine\OXM\Mapping as OXM;
-use RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Contact;
+use RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Contact;
 
 /**
  * A Print Buyer or a Print Provider sends a Refusal to decline receipt of a Business Object.
@@ -30,13 +30,13 @@ class Refusal extends AbstractBusinessObject
     /**
      * Detailed contact information about the company.
      *
-     * @var RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Contact
+     * @var RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Contact
      *
      * @deprecated  starting with PrintTalk 1.3, the [cXML]
      *              PrintTalk/Header specifies all necessary
      *              credentials.
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Contact")
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Contact")
      */
     protected $Contact;
 
@@ -50,7 +50,7 @@ class Refusal extends AbstractBusinessObject
     }
 
     /**
-     * @return RDF\JobDefinitionFormatBundle\XmlEntity\JDF\Resource\Contact
+     * @return RDF\JobDefinitionFormatBundle\Model\JDF\Resource\Contact
      */
     public function getContact()
     {

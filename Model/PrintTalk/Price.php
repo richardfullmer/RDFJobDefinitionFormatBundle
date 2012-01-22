@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk;
+namespace RDF\JobDefinitionFormatBundle\Model\PrintTalk;
 
 use Doctrine\OXM\Mapping as OXM;
 
@@ -124,9 +124,9 @@ class Price extends AbstractPT
      * Price for orders in excess of the nominal delivery quantity
      * specified in Amount.
      * 
-     * @var RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Additional[]
+     * @var RDF\JobDefinitionFormatBundle\Model\PrintTalk\Additional[]
      *
-     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Additional", name="Additional", collection=true)
+     * @OXM\XmlElement(type="RDF\JobDefinitionFormatBundle\Model\PrintTalk\Additional", name="Additional", collection=true)
      */
     protected $Additionals;
 
@@ -151,7 +151,7 @@ class Price extends AbstractPT
     }
 
     /**
-     * @return RDF\JobDefinitionFormatBundle\XmlEntity\PrintTalk\Additional[]
+     * @return RDF\JobDefinitionFormatBundle\Model\PrintTalk\Additional[]
      */
     public function getAdditionals()
     {
